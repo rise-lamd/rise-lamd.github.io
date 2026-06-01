@@ -1,0 +1,34 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ "/" | relLangURL }}">
+      <span class="brand-short">{{ .Site.Params.groupNameShort }}</span>
+      <span class="brand-inst">{{ .Site.Params.institution }}</span>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL | relLangURL }}"
+               {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
+              {{ i18n (printf "nav_%s" .Identifier) }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <div class="lang-switch">
+      {{- /* Link to the SAME page in each other language; fall back to that
+             language's home page if no translation of this page exists. */ -}}
+      {{ range .AllTranslations }}
+        {{ if eq .Language.Lang $.Site.Language.Lang }}
+          <span class="lang-current">{{ .Language.Lang | upper }}</span>
+        {{ else }}
+          <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}">{{ .Language.Lang | upper }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</header>

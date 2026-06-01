@@ -1,0 +1,51 @@
+# UI strings for English. Add a key here + in pt.toml, then use
+# {{ i18n "key" }} in a template. Keep the two files in sync.
+
+[nav_home]
+other = "Home"
+[nav_people]
+other = "People"
+[nav_research]
+other = "Research"
+[nav_publications]
+other = "Publications"
+[nav_news]
+other = "News"
+[nav_join]
+other = "Join us"
+[nav_contact]
+other = "Contact"
+
+[people_pi]
+other = "Principal Investigator"
+[people_members]
+other = "Members"
+[people_alumni]
+other = "Alumni"
+[people_now]
+other = "Now:"
+
+[pub_all]
+other = "All publications"
+
+[proj_active]
+other = "Active projects"
+[proj_archived]
+other = "Past projects"
+[proj_funding]
+other = "Funding:"
+[proj_collaborators]
+other = "Collaborators:"
+
+[news_readmore]
+other = "Read more"
+[updated_on]
+other = "Updated"
+
+[funding_title]
+other = "Funding & partners"
+
+[home_more_news]
+other = "More news"
+[home_featured_pubs]
+other = "Selected publications"

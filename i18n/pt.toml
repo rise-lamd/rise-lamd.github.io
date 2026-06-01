@@ -1,0 +1,51 @@
+# Strings de interface em Português. Adicione a chave aqui + em en.toml,
+# e use {{ i18n "chave" }} no template. Mantenha os dois arquivos em sincronia.
+
+[nav_home]
+other = "Início"
+[nav_people]
+other = "Equipe"
+[nav_research]
+other = "Pesquisa"
+[nav_publications]
+other = "Publicações"
+[nav_news]
+other = "Notícias"
+[nav_join]
+other = "Junte-se"
+[nav_contact]
+other = "Contato"
+
+[people_pi]
+other = "Pesquisador Responsável"
+[people_members]
+other = "Membros"
+[people_alumni]
+other = "Egressos"
+[people_now]
+other = "Atualmente:"
+
+[pub_all]
+other = "Todas as publicações"
+
+[proj_active]
+other = "Projetos em andamento"
+[proj_archived]
+other = "Projetos concluídos"
+[proj_funding]
+other = "Financiamento:"
+[proj_collaborators]
+other = "Colaboradores:"
+
+[news_readmore]
+other = "Leia mais"
+[updated_on]
+other = "Atualizado em"
+
+[funding_title]
+other = "Financiamento e parceiros"
+
+[home_more_news]
+other = "Mais notícias"
+[home_featured_pubs]
+other = "Publicações selecionadas"

@@ -1,0 +1,12 @@
+# Contact & location — edit freely. Bilingual fields use { en, pt }.
+email: "rise.lamd@unesp.br"
+phone: "+55 (xx) xxxx-xxxx"
+address:
+  en: "Lab room 000, Building Name\nDepartment Name, UNESP\nCity – State, Brazil, 00000-000"
+  pt: "Sala 000, Prédio\nDepartamento, UNESP\nCidade – Estado, Brasil, 00000-000"
+# A Google Maps "place" link (optional). Leave empty "" to hide the map link.
+maps_url: "https://maps.google.com/?q=UNESP"
+social:
+  github: "https://github.com/your-org"
+  # twitter: "https://x.com/yourgroup"
+  # linkedin: "https://linkedin.com/company/yourgroup"

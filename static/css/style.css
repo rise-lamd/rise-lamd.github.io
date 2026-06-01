@@ -1,0 +1,133 @@
+/* ============================================================
+   RISE / LAMD — site styles
+   Edit the color variables below to match UNESP branding.
+   ============================================================ */
+:root {
+  --brand:        #0b3d62;   /* primary (deep blue) — swap for UNESP color */
+  --brand-accent: #c8102e;   /* accent (red) */
+  --ink:          #1c1f23;
+  --muted:        #5e6671;
+  --line:         #e4e7eb;
+  --bg:           #ffffff;
+  --bg-soft:      #f6f8fa;
+  --maxw:         1060px;
+  --radius:       10px;
+  font-size: 17px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; }
+.muted { color: var(--muted); }
+
+/* ---------- Header ---------- */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; background: rgba(255,255,255,.95);
+  backdrop-filter: saturate(180%) blur(6px); z-index: 10;
+}
+.header-inner { display: flex; align-items: center; gap: 1rem; padding: .7rem 1.25rem; flex-wrap: wrap; }
+.brand { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-short { font-weight: 700; color: var(--brand); font-size: 1.05rem; }
+.brand-inst { font-size: .68rem; color: var(--muted); max-width: 28ch; }
+.main-nav { margin-left: auto; }
+.main-nav ul { display: flex; gap: 1.1rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.main-nav a { color: var(--ink); font-size: .92rem; font-weight: 500; }
+.main-nav a.active { color: var(--brand); border-bottom: 2px solid var(--brand-accent); }
+.lang-switch { display: flex; gap: .4rem; font-size: .8rem; align-items: center; }
+.lang-switch a, .lang-current { padding: .1rem .35rem; border-radius: 4px; }
+.lang-current { background: var(--brand); color: #fff; }
+
+/* ---------- Hero / home ---------- */
+.hero { text-align: center; padding: 3.5rem 0 2rem; }
+.hero h1 { font-size: 2.4rem; color: var(--brand); margin: 0 0 .5rem; }
+.hero-tagline { font-size: 1.2rem; color: var(--muted); max-width: 60ch; margin: 0 auto 1.5rem; }
+.cta-row { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: .55rem 1.1rem; border-radius: var(--radius);
+  border: 1px solid var(--line); background: var(--bg-soft); color: var(--ink); font-weight: 600;
+}
+.btn:hover { text-decoration: none; border-color: var(--brand); }
+.btn-primary { background: var(--brand); color: #fff; border-color: var(--brand); }
+.mission { max-width: 70ch; margin: 0 auto 2.5rem; text-align: center; font-size: 1.05rem; }
+
+section { margin: 2.5rem 0; }
+h2 { color: var(--brand); border-bottom: 2px solid var(--line); padding-bottom: .3rem; }
+
+/* ---------- Prose pages ---------- */
+.prose { max-width: 72ch; margin: 2rem auto; }
+.prose h1 { color: var(--brand); }
+.prose blockquote { border-left: 3px solid var(--brand-accent); margin: 1rem 0; padding: .3rem 1rem; color: var(--muted); background: var(--bg-soft); }
+
+/* ---------- People ---------- */
+.people-group { margin-top: 2rem; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.4rem; }
+.person { display: flex; gap: .9rem; }
+.person-photo { width: 84px; height: 84px; object-fit: cover; border-radius: 50%; background: var(--bg-soft); flex: 0 0 auto; }
+.person-info h3 { margin: 0 0 .15rem; font-size: 1.02rem; }
+.person-role { margin: 0; color: var(--brand); font-weight: 600; font-size: .9rem; }
+.person-interests { margin: .25rem 0; font-size: .88rem; color: var(--muted); }
+.person-now { margin: .25rem 0; font-size: .85rem; }
+.person-links { display: flex; gap: .6rem; font-size: .85rem; margin: .3rem 0 0; }
+
+/* ---------- Projects ---------- */
+.project { display: flex; gap: 1.2rem; padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.project-img { width: 180px; height: 120px; object-fit: cover; border-radius: var(--radius); flex: 0 0 auto; }
+.project-body h3 { margin: 0 0 .4rem; }
+.project-meta { display: flex; flex-direction: column; gap: .15rem; font-size: .85rem; color: var(--muted); }
+.project-links { display: flex; gap: .8rem; margin-top: .4rem; }
+.archived-list { color: var(--muted); }
+
+/* ---------- Publications ---------- */
+.pub-year { margin-top: 1.6rem; }
+.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub-list li { padding: .7rem 0; border-bottom: 1px solid var(--line); display: grid; gap: .15rem; }
+.pub-title { font-weight: 600; }
+.pub-meta { font-size: .9rem; color: var(--muted); }
+.pub-links { display: flex; gap: .7rem; font-size: .82rem; margin-top: .2rem; }
+.pub-type {
+  display: inline-block; font-size: .68rem; text-transform: uppercase; letter-spacing: .03em;
+  background: var(--bg-soft); color: var(--muted); padding: .05rem .4rem; border-radius: 4px; width: max-content;
+}
+
+/* ---------- News ---------- */
+.news-item { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.news-item h3 { margin: .2rem 0; }
+.news-date { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.news-list { list-style: none; padding: 0; }
+.news-list li { display: flex; gap: .8rem; padding: .3rem 0; align-items: baseline; }
+.more-link { font-size: .9rem; font-weight: 600; }
+.news-single .news-date { display: block; margin-bottom: .3rem; }
+.back-link { margin-top: 2rem; }
+
+/* ---------- Funding ---------- */
+.funding-logos { display: flex; flex-wrap: wrap; gap: 1.6rem; align-items: center; }
+.funding-logos img { height: 52px; width: auto; filter: grayscale(100%); opacity: .8; transition: .2s; }
+.funding-logos a:hover img { filter: none; opacity: 1; }
+
+/* ---------- Contact ---------- */
+.contact-card { background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; }
+.contact-social { display: flex; gap: 1rem; }
+
+/* ---------- Footer ---------- */
+.site-footer { border-top: 1px solid var(--line); margin-top: 3rem; padding: 1.5rem 0; font-size: .85rem; }
+.footer-inner { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 640px) {
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .main-nav { margin-left: 0; }
+  .project { flex-direction: column; }
+  .project-img { width: 100%; height: auto; }
+  .hero h1 { font-size: 1.9rem; }
+}

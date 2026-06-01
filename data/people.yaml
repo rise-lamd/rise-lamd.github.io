@@ -1,0 +1,56 @@
+# ============================================================
+#  PEOPLE  —  the single source of truth for the team page.
+#  To add someone: copy a block, fill it in, save. That's it.
+#  - Bilingual fields use  { en: "...", pt: "..." }
+#  - photo: put the image in  static/img/people/  and reference it
+#    as  /img/people/filename.jpg  (square photos look best, ~400x400)
+#  - When a member graduates/leaves, just change  alumni: false -> true
+#    and fill in  now:  (their current position).
+#  - Order within each group follows  weight  (lower = higher up).
+# ============================================================
+
+- name: "Prof. Dr. Advisor Name"
+  pi: true                       # the Principal Investigator (only one)
+  weight: 1
+  photo: "/img/placeholder.svg"
+  role:
+    en: "Principal Investigator · Associate Professor"
+    pt: "Pesquisador Responsável · Professor Associado"
+  interests:
+    en: "Machine learning, optimization, applied AI for engineering."
+    pt: "Aprendizado de máquina, otimização, IA aplicada à engenharia."
+  email: "advisor@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/XXXXXXXX"
+    scholar: "https://scholar.google.com/citations?user=XXXX"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+
+- name: "Thiago Almeida"
+  pi: false
+  alumni: false
+  weight: 10
+  photo: "/img/placeholder.svg"
+  role:
+    en: "MSc Student"
+    pt: "Mestrando"
+  interests:
+    en: "Topic of your dissertation in one short line."
+    pt: "Tema da sua dissertação em uma linha."
+  email: "thiago@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/XXXXXXXX"
+
+# -------- Example alumnus (shown in the Alumni section) --------
+- name: "Former Member Example"
+  pi: false
+  alumni: true
+  weight: 100
+  photo: "/img/placeholder.svg"
+  role:
+    en: "MSc, 2024"
+    pt: "Mestre, 2024"
+  now:
+    en: "Data Scientist at Company X"
+    pt: "Cientista de Dados na Empresa X"
+  links:
+    lattes: "http://lattes.cnpq.br/XXXXXXXX"

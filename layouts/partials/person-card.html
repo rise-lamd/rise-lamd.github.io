@@ -1,0 +1,19 @@
+{{ $lang := .lang }}{{ $p := .p }}
+<div class="person">
+  <img class="person-photo" src="{{ (default "/img/placeholder.svg" $p.photo) | relURL }}"
+       alt="{{ $p.name }}" loading="lazy">
+  <div class="person-info">
+    <h3>{{ $p.name }}</h3>
+    {{ with $p.role }}<p class="person-role">{{ index . $lang }}</p>{{ end }}
+    {{ with $p.interests }}<p class="person-interests">{{ index . $lang }}</p>{{ end }}
+    {{ with $p.now }}<p class="person-now"><strong>{{ i18n "people_now" }}</strong> {{ index . $lang }}</p>{{ end }}
+    <p class="person-links">
+      {{ with $p.email }}<a href="mailto:{{ . }}">✉</a>{{ end }}
+      {{ with $p.links }}
+        {{ with .lattes }}<a href="{{ . }}" target="_blank" rel="noopener">Lattes</a>{{ end }}
+        {{ with .scholar }}<a href="{{ . }}" target="_blank" rel="noopener">Scholar</a>{{ end }}
+        {{ with .orcid }}<a href="{{ . }}" target="_blank" rel="noopener">ORCID</a>{{ end }}
+      {{ end }}
+    </p>
+  </div>
+</div>

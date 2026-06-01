@@ -1,0 +1,12 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{ if .IsHome }}{{ .Site.Params.groupNameShort }}{{ else }}{{ .Title }} · {{ .Site.Params.groupNameShort }}{{ end }}
+  </title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.groupNameFull }}{{ end }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{ with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">
+  {{ end }}
+</head>

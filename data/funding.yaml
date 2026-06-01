@@ -1,0 +1,14 @@
+# Funding agencies & partners shown on the home page and Research page.
+# Put logos in static/img/funding/  (transparent PNG/SVG look best).
+- name: "FAPESP"
+  logo: "/img/funding/fapesp.png"
+  url: "https://fapesp.br"
+- name: "CNPq"
+  logo: "/img/funding/cnpq.png"
+  url: "https://www.gov.br/cnpq"
+- name: "CAPES"
+  logo: "/img/funding/capes.png"
+  url: "https://www.gov.br/capes"
+- name: "UNESP"
+  logo: "/img/funding/unesp.png"
+  url: "https://www.unesp.br"

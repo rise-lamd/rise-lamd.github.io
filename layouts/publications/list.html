@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $pubs := sort .Site.Data.publications "year" "desc" }}
+
+<article class="prose">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+
+{{ $years := slice }}
+{{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
+{{ $years = uniq $years }}
+
+<section class="pubs">
+  {{ range $years }}
+    {{ $y := . }}
+    <h2 class="pub-year">{{ $y }}</h2>
+    <ul class="pub-list">
+      {{ range where $pubs "year" $y }}
+        <li>
+          <span class="pub-type pub-type-{{ .type }}">{{ .type }}</span>
+          <span class="pub-title">{{ .title }}</span>
+          <span class="pub-meta">{{ .authors }} · <em>{{ .venue }}</em></span>
+          <span class="pub-links">
+            {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+            {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+            {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+          </span>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</section>
+
+{{ end }}

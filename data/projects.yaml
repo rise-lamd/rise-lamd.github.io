@@ -1,0 +1,45 @@
+# ============================================================
+#  PROJECTS / RESEARCH LINES  —  source of truth for the Research page.
+#  To archive a finished project: change  status: active -> archived.
+#  Bilingual fields use  { en: "...", pt: "..." }.
+# ============================================================
+
+- title:
+    en: "Intelligent Systems for Industrial Process Optimization"
+    pt: "Sistemas Inteligentes para Otimização de Processos Industriais"
+  status: active
+  weight: 1
+  image: "/img/placeholder.svg"
+  abstract:
+    en: >
+      One short paragraph describing the project: the problem, the approach,
+      and the expected outcome. Keep it readable for a non-specialist.
+    pt: >
+      Um parágrafo curto descrevendo o projeto: o problema, a abordagem
+      e o resultado esperado. Mantenha legível para não especialistas.
+  funding: "FAPESP #2025/00000-0"
+  collaborators:
+    - "Partner Lab, University Y"
+  links:
+    code: "https://github.com/your-org/your-repo"
+    # paper: "https://doi.org/..."
+
+- title:
+    en: "Machine Learning for Environmental Data"
+    pt: "Aprendizado de Máquina para Dados Ambientais"
+  status: active
+  weight: 2
+  image: "/img/placeholder.svg"
+  abstract:
+    en: "Short description of the second research line."
+    pt: "Descrição curta da segunda linha de pesquisa."
+  funding: "CNPq"
+
+- title:
+    en: "Completed Project Example"
+    pt: "Exemplo de Projeto Concluído"
+  status: archived
+  weight: 50
+  abstract:
+    en: "Past project — shown under 'Past projects'."
+    pt: "Projeto anterior — exibido em 'Projetos concluídos'."

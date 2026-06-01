@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="prose news-single">
+  <span class="news-date">{{ .Date.Format "2006-01-02" }}</span>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <p class="back-link"><a href="{{ "/news" | relLangURL }}">← {{ i18n "nav_news" }}</a></p>
+</article>
+{{ end }}

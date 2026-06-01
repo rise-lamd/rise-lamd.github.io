@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<section class="hero">
+  <h1>{{ .Site.Params.groupNameShort }}</h1>
+  <p class="hero-tagline">{{ .Site.Language.Params.tagline }}</p>
+  <div class="cta-row">
+    <a class="btn" href="{{ "/research" | relLangURL }}">{{ i18n "nav_research" }}</a>
+    <a class="btn" href="{{ "/people" | relLangURL }}">{{ i18n "nav_people" }}</a>
+    <a class="btn btn-primary" href="{{ "/join" | relLangURL }}">{{ i18n "nav_join" }}</a>
+  </div>
+</section>
+
+<section class="mission">
+  {{ .Content }}
+</section>
+
+{{ $news := first 3 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+{{ with $news }}
+<section class="home-news">
+  <h2>{{ i18n "nav_news" }}</h2>
+  <ul class="news-list">
+    {{ range . }}
+      <li>
+        <span class="news-date">{{ .Date.Format "2006-01-02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+  <a class="more-link" href="{{ "/news" | relLangURL }}">{{ i18n "home_more_news" }} →</a>
+</section>
+{{ end }}
+
+{{ $featured := where .Site.Data.publications "featured" true }}
+{{ with $featured }}
+<section class="home-pubs">
+  <h2>{{ i18n "home_featured_pubs" }}</h2>
+  <ul class="pub-list">
+    {{ range . }}
+      <li>
+        <span class="pub-title">{{ .title }}</span>
+        <span class="pub-meta">{{ .authors }} · <em>{{ .venue }}</em>, {{ .year }}</span>
+        {{ with .doi }}<a class="pub-link" href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+  <a class="more-link" href="{{ "/publications" | relLangURL }}">{{ i18n "pub_all" }} →</a>
+</section>
+{{ end }}
+
+{{ partial "funding.html" . }}
+
+{{ end }}

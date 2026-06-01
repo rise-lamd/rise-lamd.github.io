@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $c := .Site.Data.contact }}
+
+<article class="prose">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <div class="contact-card">
+    {{ with $c.email }}<p>✉ <a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+    {{ with $c.phone }}<p>☎ {{ . }}</p>{{ end }}
+    {{ with $c.address }}<p class="contact-address">{{ index . $lang | replaceRE "\n" "<br>" | safeHTML }}</p>{{ end }}
+    {{ with $c.maps_url }}<p><a href="{{ . }}" target="_blank" rel="noopener">🗺 Google Maps</a></p>{{ end }}
+    {{ with $c.social }}
+    <p class="contact-social">
+      {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+      {{ with .twitter }}<a href="{{ . }}" target="_blank" rel="noopener">X</a>{{ end }}
+      {{ with .linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+    </p>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

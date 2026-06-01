@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $projects := sort .Site.Data.projects "weight" }}
+
+<article class="prose">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+
+{{ with where $projects "status" "active" }}
+<section class="projects-group">
+  <h2>{{ i18n "proj_active" }}</h2>
+  {{ range . }}
+    <div class="project">
+      {{ with .image }}<img class="project-img" src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
+      <div class="project-body">
+        <h3>{{ index .title $lang }}</h3>
+        <p>{{ index .abstract $lang }}</p>
+        <p class="project-meta">
+          {{ with .funding }}<span><strong>{{ i18n "proj_funding" }}</strong> {{ . }}</span>{{ end }}
+          {{ with .collaborators }}<span><strong>{{ i18n "proj_collaborators" }}</strong> {{ delimit . ", " }}</span>{{ end }}
+        </p>
+        {{ with .links }}
+        <p class="project-links">
+          {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+          {{ with .paper }}<a href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+        </p>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</section>
+{{ end }}
+
+{{ with where $projects "status" "archived" }}
+<section class="projects-group">
+  <h2>{{ i18n "proj_archived" }}</h2>
+  <ul class="archived-list">
+    {{ range . }}
+      <li><strong>{{ index .title $lang }}</strong> — {{ index .abstract $lang }}</li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ partial "funding.html" . }}
+
+{{ end }}

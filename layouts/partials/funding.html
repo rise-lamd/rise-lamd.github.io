@@ -1,0 +1,12 @@
+{{ with .Site.Data.funding }}
+<section class="funding">
+  <h2>{{ i18n "funding_title" }}</h2>
+  <div class="funding-logos">
+    {{ range . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+        <img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy">
+      </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>{{ .Site.Params.groupNameShort }}</strong><br>
+      <span class="muted">{{ .Site.Params.institution }}</span>
+    </div>
+    <div class="muted">
+      © {{ now.Year }} {{ .Site.Params.groupNameShort }}.
+      {{ if and .GitInfo (not .IsHome) }}
+        · {{ i18n "updated_on" }} {{ .Lastmod.Format "2006-01-02" }}
+      {{ end }}
+    </div>
+  </div>
+</footer>

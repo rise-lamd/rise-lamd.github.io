@@ -1,0 +1,78 @@
+# ============================================================
+#  Site configuration
+#  Most things you'll change day-to-day are NOT here — they live
+#  in the data/ folder and content/ files. See CONTRIBUTING.md.
+# ============================================================
+
+baseURL = "https://YOUR-GROUP.github.io/"   # <-- change after you pick a hosting URL
+title = "RISE / LAMD"                         # group short name, shown in browser tab
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+# Pretty URLs and good defaults
+enableEmoji = true
+enableGitInfo = true   # lets templates show "last updated" from git history
+
+[params]
+  groupNameFull = "Research Group on Intelligent Systems & Engineering — Laboratory of Applied Machine-learning & Data"
+  groupNameShort = "RISE / LAMD"
+  institution = "UNESP — Universidade Estadual Paulista “Júlio de Mesquita Filho”"
+  email = "rise.lamd@unesp.br"
+  # Edit the rest of the contact details in data/contact.yaml
+
+# ------------------------------------------------------------
+#  Languages — Portuguese + English
+# ------------------------------------------------------------
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    weight = 1
+    [languages.en.params]
+      tagline = "We build intelligent systems and apply machine learning to real-world engineering and science."
+  [languages.pt]
+    label = "Português"
+    locale = "pt-BR"
+    weight = 2
+    [languages.pt.params]
+      tagline = "Construímos sistemas inteligentes e aplicamos aprendizado de máquina a problemas reais de engenharia e ciência."
+
+# ------------------------------------------------------------
+#  Navigation menu — shared structure, labels are translated
+#  in i18n/en.toml and i18n/pt.toml (keys below).
+# ------------------------------------------------------------
+[menus]
+  [[menus.main]]
+    identifier = "home"
+    pageRef = "/"
+    weight = 1
+  [[menus.main]]
+    identifier = "people"
+    pageRef = "/people"
+    weight = 2
+  [[menus.main]]
+    identifier = "research"
+    pageRef = "/research"
+    weight = 3
+  [[menus.main]]
+    identifier = "publications"
+    pageRef = "/publications"
+    weight = 4
+  [[menus.main]]
+    identifier = "news"
+    pageRef = "/news"
+    weight = 5
+  [[menus.main]]
+    identifier = "join"
+    pageRef = "/join"
+    weight = 6
+  [[menus.main]]
+    identifier = "contact"
+    pageRef = "/contact"
+    weight = 7
+
+[markup.goldmark.renderer]
+  unsafe = true   # allow raw HTML in markdown (used sparingly in content)
+
+[taxonomies]
+  topic = "topics"

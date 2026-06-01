@@ -1,0 +1,40 @@
+# ============================================================
+#  PUBLICATIONS  —  source of truth for the Publications page.
+#  Listed automatically newest-first (by  year, then weight).
+#  To add a paper: copy a block to the top, fill it in.
+#
+#  type:  journal | conference | thesis | preprint | chapter
+#  featured: true   -> also shown in "Selected publications" on the home page
+#
+#  NOTE: titles/venues are language-neutral (kept as written/published),
+#  so no { en, pt } needed here.
+#
+#  Want to import from BibTeX (Zotero/Mendeley export) instead of typing
+#  these by hand? See the "Importing publications from BibTeX" section
+#  in CONTRIBUTING.md — there's a one-command script.
+# ============================================================
+
+- title: "An Example Journal Paper on Applied Machine Learning"
+  authors: "Almeida, T.; Advisor, A."
+  venue: "Journal of Intelligent Systems"
+  year: 2025
+  type: journal
+  featured: true
+  doi: "https://doi.org/10.0000/example"
+  pdf: ""        # optional direct PDF link
+  code: ""       # optional code/dataset link
+
+- title: "An Example Conference Paper"
+  authors: "Advisor, A.; Almeida, T.; Collaborator, C."
+  venue: "Proc. of the Intl. Conf. on Machine Learning Applications (ICMLA)"
+  year: 2024
+  type: conference
+  featured: false
+  doi: "https://doi.org/10.0000/example2"
+
+- title: "Dissertation Title Example"
+  authors: "Almeida, T."
+  venue: "MSc Dissertation, UNESP"
+  year: 2024
+  type: thesis
+  pdf: ""

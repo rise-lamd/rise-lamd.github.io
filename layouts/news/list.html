@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="prose">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+
+<section class="news">
+  {{ range .Pages.ByDate.Reverse }}
+    <article class="news-item">
+      <span class="news-date">{{ .Date.Format "2006-01-02" }}</span>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+      <a class="more-link" href="{{ .RelPermalink }}">{{ i18n "news_readmore" }} →</a>
+    </article>
+  {{ end }}
+</section>
+{{ end }}
