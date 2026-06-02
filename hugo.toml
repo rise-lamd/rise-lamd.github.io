@@ -5,7 +5,7 @@
 # ============================================================
 
 baseURL = "https://YOUR-GROUP.github.io/"   # <-- change after you pick a hosting URL
-title = "RISE / LAMD"                         # group short name, shown in browser tab
+title = "RISE-LAMD"                           # group short name, shown in browser tab
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
@@ -14,8 +14,8 @@ enableEmoji = true
 enableGitInfo = true   # lets templates show "last updated" from git history
 
 [params]
-  groupNameFull = "Research Group on Intelligent Systems & Engineering — Laboratory of Applied Machine-learning & Data"
-  groupNameShort = "RISE / LAMD"
+  groupNameFull = "RISE-LAMD — Recognition, Inference and Search on Language and Multimedia Data"
+  groupNameShort = "RISE-LAMD"
   institution = "UNESP — Universidade Estadual Paulista “Júlio de Mesquita Filho”"
   email = "rise.lamd@unesp.br"
   # Edit the rest of the contact details in data/contact.yaml
@@ -29,13 +29,13 @@ enableGitInfo = true   # lets templates show "last updated" from git history
     locale = "en-US"
     weight = 1
     [languages.en.params]
-      tagline = "We build intelligent systems and apply machine learning to real-world engineering and science."
+      tagline = "Recognition, inference, and search over language and multimedia data — natural language processing, computer vision, and information retrieval."
   [languages.pt]
     label = "Português"
     locale = "pt-BR"
     weight = 2
     [languages.pt.params]
-      tagline = "Construímos sistemas inteligentes e aplicamos aprendizado de máquina a problemas reais de engenharia e ciência."
+      tagline = "Reconhecimento, inferência e busca em dados de linguagem e multimídia — processamento de linguagem natural, visão computacional e recuperação de informação."
 
 # ------------------------------------------------------------
 #  Navigation menu — shared structure, labels are translated

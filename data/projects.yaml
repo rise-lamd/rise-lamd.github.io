@@ -5,8 +5,8 @@
 # ============================================================
 
 - title:
-    en: "Intelligent Systems for Industrial Process Optimization"
-    pt: "Sistemas Inteligentes para Otimização de Processos Industriais"
+    en: "Natural Language Understanding & Search"
+    pt: "Compreensão de Linguagem Natural e Busca"
   status: active
   weight: 1
   image: "/img/placeholder.svg"
@@ -14,9 +14,11 @@
     en: >
       One short paragraph describing the project: the problem, the approach,
       and the expected outcome. Keep it readable for a non-specialist.
+      (Example: information retrieval and question answering over Portuguese text.)
     pt: >
       Um parágrafo curto descrevendo o projeto: o problema, a abordagem
       e o resultado esperado. Mantenha legível para não especialistas.
+      (Ex.: recuperação de informação e resposta a perguntas em textos em português.)
   funding: "FAPESP #2025/00000-0"
   collaborators:
     - "Partner Lab, University Y"
@@ -25,14 +27,14 @@
     # paper: "https://doi.org/..."
 
 - title:
-    en: "Machine Learning for Environmental Data"
-    pt: "Aprendizado de Máquina para Dados Ambientais"
+    en: "Multimedia Recognition & Retrieval"
+    pt: "Reconhecimento e Recuperação de Multimídia"
   status: active
   weight: 2
   image: "/img/placeholder.svg"
   abstract:
-    en: "Short description of the second research line."
-    pt: "Descrição curta da segunda linha de pesquisa."
+    en: "Short description of the second research line (e.g. image/video recognition and cross-modal search)."
+    pt: "Descrição curta da segunda linha de pesquisa (ex.: reconhecimento de imagem/vídeo e busca multimodal)."
   funding: "CNPq"
 
 - title:

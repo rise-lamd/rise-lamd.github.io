@@ -1,0 +1,8 @@
+{{ define "main" }}
+<section class="notfound">
+  <p class="code">404</p>
+  <h1>{{ i18n "nf_title" }}</h1>
+  <p>{{ i18n "nf_body" }}</p>
+  <a class="btn btn-primary" href="{{ "/" | relLangURL }}">{{ i18n "nf_home" }}</a>
+</section>
+{{ end }}

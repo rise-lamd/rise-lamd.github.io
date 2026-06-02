@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="RISE-LAMD">
+  <title>RISE-LAMD</title>
+  <!-- signal node -->
+  <circle cx="16" cy="11" r="6.2" fill="#16a9cf" opacity="0.18"/>
+  <circle cx="16" cy="11" r="4.4" fill="#16a9cf"/>
+  <circle cx="16" cy="11" r="1.7" fill="#ffffff"/>
+  <!-- stem into the ground -->
+  <path d="M16 15.4V24" fill="none" stroke="#16a9cf" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- sprout -->
+  <g fill="none" stroke="#1aa07a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 20q-4.6-0.6-6-5 4.6 0.6 6 4.2"/>
+    <path d="M16 18q4.4-0.8 5.6-5.4-2 4.6-5.6 5.4"/>
+  </g>
+  <!-- floating island -->
+  <path d="M7 25q9 3.4 18 0" fill="none" stroke="#16a9cf" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

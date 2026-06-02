@@ -1,11 +1,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- /* No-flash theme: set data-theme before first paint. */ -}}
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) { document.documentElement.dataset.theme = 'dark'; }
+    })();
+  </script>
   <title>
     {{ if .IsHome }}{{ .Site.Params.groupNameShort }}{{ else }}{{ .Title }} · {{ .Site.Params.groupNameShort }}{{ end }}
   </title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.groupNameFull }}{{ end }}">
+  <meta name="theme-color" content="#101a2e">
+  <link rel="icon" type="image/svg+xml" href="{{ "img/favicon.svg" | relURL }}">
+  <link rel="icon" type="image/png" href="{{ "img/logo-mark.png" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "img/logo-mark.png" | relURL }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <script defer src="{{ "js/theme.js" | relURL }}"></script>
   {{ with .OutputFormats.Get "rss" }}
   <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">
   {{ end }}

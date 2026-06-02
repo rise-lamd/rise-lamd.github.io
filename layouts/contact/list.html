@@ -1,9 +1,10 @@
 {{ define "main" }}
 {{ $lang := .Site.Language.Lang }}
-{{ $c := .Site.Data.contact }}
+{{ $c := hugo.Data.contact }}
 
 <article class="prose">
   <h1>{{ .Title }}</h1>
+  <div class="signal-rule" aria-hidden="true"></div>
   {{ .Content }}
 
   <div class="contact-card">

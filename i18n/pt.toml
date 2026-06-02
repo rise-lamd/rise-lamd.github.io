@@ -45,6 +45,42 @@ other = "Atualizado em"
 [funding_title]
 other = "Financiamento e parceiros"
 
+[skip_to_content]
+other = "Pular para o conteúdo"
+
+[nf_title]
+other = "Sinal perdido"
+[nf_body]
+other = "Esta página não está no campo. O link pode estar desatualizado ou a página pode ter mudado de lugar."
+[nf_home]
+other = "Voltar ao início"
+
+[hero_eyebrow]
+other = "Grupo de pesquisa · UNESP"
+
+[mod_title]
+other = "Sete sinais, uma representação"
+[mod_body]
+other = "Transformamos texto, diálogo, imagens, áudio, vídeo, tabelas e sinais em conhecimento estruturado que pode ser buscado e analisado."
+[mod_cta]
+other = "Conheça nossa pesquisa"
+[mod_text]
+other = "Texto"
+[mod_dialogue]
+other = "Diálogo"
+[mod_image]
+other = "Imagem"
+[mod_audio]
+other = "Áudio"
+[mod_video]
+other = "Vídeo"
+[mod_table]
+other = "Tabelas"
+[mod_signal]
+other = "Sinais"
+[mod_knowledge]
+other = "Conhecimento"
+
 [home_more_news]
 other = "Mais notícias"
 [home_featured_pubs]

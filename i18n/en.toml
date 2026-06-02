@@ -45,6 +45,42 @@ other = "Updated"
 [funding_title]
 other = "Funding & partners"
 
+[skip_to_content]
+other = "Skip to content"
+
+[nf_title]
+other = "Lost signal"
+[nf_body]
+other = "This page isn't in the field. The link may be old, or the page may have moved."
+[nf_home]
+other = "Back to home"
+
+[hero_eyebrow]
+other = "Research group · UNESP"
+
+[mod_title]
+other = "Seven signals, one representation"
+[mod_body]
+other = "We turn text, dialogue, images, audio, video, tables, and signals into structured knowledge that people can search and reason over."
+[mod_cta]
+other = "Explore our research"
+[mod_text]
+other = "Text"
+[mod_dialogue]
+other = "Dialogue"
+[mod_image]
+other = "Image"
+[mod_audio]
+other = "Audio"
+[mod_video]
+other = "Video"
+[mod_table]
+other = "Tables"
+[mod_signal]
+other = "Signals"
+[mod_knowledge]
+other = "Knowledge"
+
 [home_more_news]
 other = "More news"
 [home_featured_pubs]

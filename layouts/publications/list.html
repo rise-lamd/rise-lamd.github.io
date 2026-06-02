@@ -1,8 +1,9 @@
 {{ define "main" }}
-{{ $pubs := sort .Site.Data.publications "year" "desc" }}
+{{ $pubs := sort hugo.Data.publications "year" "desc" }}
 
 <article class="prose">
   <h1>{{ .Title }}</h1>
+  <div class="signal-rule" aria-hidden="true"></div>
   {{ .Content }}
 </article>
 

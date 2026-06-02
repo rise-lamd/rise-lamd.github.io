@@ -1,15 +1,16 @@
 {{ define "main" }}
 {{ $lang := .Site.Language.Lang }}
-{{ $people := sort .Site.Data.people "weight" }}
+{{ $people := sort hugo.Data.people "weight" }}
 
 <article class="prose">
   <h1>{{ .Title }}</h1>
+  <div class="signal-rule" aria-hidden="true"></div>
   {{ .Content }}
 </article>
 
 {{ with where $people "pi" true }}
 <section class="people-group">
-  <h2>{{ i18n "people_pi" }}</h2>
+  <div class="section-head"><h2>{{ i18n "people_pi" }}</h2></div>
   <div class="people-grid">
     {{ range . }}{{ partial "person-card.html" (dict "p" . "lang" $lang) }}{{ end }}
   </div>
@@ -18,7 +19,7 @@
 
 {{ with where (where $people "pi" "!=" true) "alumni" "!=" true }}
 <section class="people-group">
-  <h2>{{ i18n "people_members" }}</h2>
+  <div class="section-head"><h2>{{ i18n "people_members" }}</h2></div>
   <div class="people-grid">
     {{ range . }}{{ partial "person-card.html" (dict "p" . "lang" $lang) }}{{ end }}
   </div>
@@ -27,7 +28,7 @@
 
 {{ with where $people "alumni" true }}
 <section class="people-group">
-  <h2>{{ i18n "people_alumni" }}</h2>
+  <div class="section-head"><h2>{{ i18n "people_alumni" }}</h2></div>
   <div class="people-grid">
     {{ range . }}{{ partial "person-card.html" (dict "p" . "lang" $lang) }}{{ end }}
   </div>
