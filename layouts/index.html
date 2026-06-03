@@ -30,14 +30,17 @@
   </svg>
   <span class="hero-glow" aria-hidden="true"></span>
   <div class="hero-inner">
+    <div class="hero-logo-wrapper" aria-hidden="true">
+      <img class="hero-logo" src="{{ "/img/logo-mark-white.png" | relURL }}" width="120" alt="{{ .Site.Params.groupNameShort }}">
+    </div>
     <p class="eyebrow">{{ i18n "hero_eyebrow" }}</p>
     <h1>{{ .Site.Params.groupNameShort }}</h1>
     <p class="hero-tagline">{{ .Site.Language.Params.tagline }}</p>
-    <p class="hero-subhead">We build AI that understands language, vision, and multimedia.</p>
+    <p class="hero-subhead">{{ i18n "hero_subhead" }}</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="{{ "/research" | relLangURL }}">{{ i18n "nav_research" }}</a>
-      <a class="btn" href="{{ "/people" | relLangURL }}">{{ i18n "nav_people" }}</a>
-      <a class="btn" href="{{ "/join" | relLangURL }}">{{ i18n "nav_join" }}</a>
+      <a class="btn btn-primary" href="{{ "/research/" | relLangURL }}">{{ i18n "nav_research" }}</a>
+      <a class="btn" href="{{ "/people/" | relLangURL }}">{{ i18n "nav_people" }}</a>
+      <a class="btn" href="{{ "/opportunities/" | relLangURL }}">{{ i18n "nav_join" }}</a>
     </div>
   </div>
 </section>

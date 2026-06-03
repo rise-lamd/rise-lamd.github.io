@@ -2,6 +2,7 @@
 <html lang="{{ .Site.Language.Locale }}">
   {{ partial "head.html" . }}
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
     {{ partial "header.html" . }}
     <main id="main" class="container">

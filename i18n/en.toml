@@ -12,9 +12,11 @@ other = "Publications"
 [nav_news]
 other = "News"
 [nav_join]
-other = "Join us"
+other = "Opportunities"
 [nav_contact]
 other = "Contact"
+[nav_about]
+other = "About"
 
 [people_pi]
 other = "Principal Investigator"
@@ -58,6 +60,9 @@ other = "Back to home"
 [hero_eyebrow]
 other = "Research group · UNESP"
 
+[hero_subhead]
+other = "We build AI that understands language, vision, and multimedia."
+
 [mod_title]
 other = "Seven signals, one representation"
 [mod_body]
@@ -85,3 +90,19 @@ other = "Knowledge"
 other = "More news"
 [home_featured_pubs]
 other = "Selected publications"
+
+[pub_search_placeholder]
+other = "Search papers, authors, venues..."
+[pub_filter_all]
+other = "All"
+[pub_filter_journal]
+other = "Journals"
+[pub_filter_conference]
+other = "Conferences"
+[pub_filter_thesis]
+other = "Theses"
+
+[pub_no_results]
+other = "No publications found matching your search."
+
+

@@ -6,12 +6,12 @@
 </article>
 
 <section class="news">
-  {{ range .Pages.ByDate.Reverse }}
-    <article class="news-item">
+  {{ range $index, $element := .Pages.ByDate.Reverse }}
+    <article class="news-item" style="--i: {{ $index }}">
       <span class="news-date">{{ .Date.Format "2006-01-02" }}</span>
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-      <a class="more-link" href="{{ .RelPermalink }}">{{ i18n "news_readmore" }} →</a>
+      <a class="more-link" href="{{ .RelPermalink }}" aria-label="{{ i18n "news_readmore" }}: {{ .Title }}">{{ i18n "news_readmore" }} →</a>
     </article>
   {{ end }}
 </section>

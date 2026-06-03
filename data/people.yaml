@@ -54,3 +54,19 @@
     pt: "Cientista de Dados na Empresa X"
   links:
     lattes: "http://lattes.cnpq.br/XXXXXXXX"
+
+- name: "Vinicius Kawai"
+  pi: false                       # the Principal Investigator (only one)
+  weight: 1
+  photo: "/img/placeholder.svg"
+  role:
+    en: "Principal Investigator · Associate Professor"
+    pt: "Pesquisador Responsável · Professor Associado"
+  interests:
+    en: "Natural language processing, information retrieval, multimedia analysis, machine learning."
+    pt: "Processamento de linguagem natural, recuperação de informação, análise de multimídia, aprendizado de máquina."
+  email: "advisor@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/XXXXXXXX"
+    scholar: "https://scholar.google.com/citations?user=XXXX"
+    orcid: "https://orcid.org/0000-0000-0000-0000"

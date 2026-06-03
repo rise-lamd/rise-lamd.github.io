@@ -16,3 +16,15 @@
     sync(next);
   });
 })();
+
+// Scroll progress bar micro-interaction
+(function () {
+  window.addEventListener('scroll', function () {
+    var winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+    var progress = document.querySelector('.scroll-progress');
+    if (progress) progress.style.width = scrolled + '%';
+  });
+})();
+

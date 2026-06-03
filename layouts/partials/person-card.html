@@ -1,5 +1,5 @@
-{{ $lang := .lang }}{{ $p := .p }}
-<div class="person">
+{{ $lang := .lang }}{{ $p := .p }}{{ $index := .index }}
+<div class="person" style="--i: {{ default 0 $index }}">
   <img class="person-photo" src="{{ (default "/img/placeholder.svg" $p.photo) | relURL }}"
        alt="{{ $p.name }}" loading="lazy">
   <div class="person-info">
@@ -8,7 +8,7 @@
     {{ with $p.interests }}<p class="person-interests">{{ index . $lang }}</p>{{ end }}
     {{ with $p.now }}<p class="person-now"><strong>{{ i18n "people_now" }}</strong> {{ index . $lang }}</p>{{ end }}
     <p class="person-links">
-      {{ with $p.email }}<a href="mailto:{{ . }}">✉</a>{{ end }}
+      {{ with $p.email }}<a href="mailto:{{ . }}" aria-label="Email {{ $p.name }}">✉</a>{{ end }}
       {{ with $p.links }}
         {{ with .lattes }}<a href="{{ . }}" target="_blank" rel="noopener">Lattes</a>{{ end }}
         {{ with .scholar }}<a href="{{ . }}" target="_blank" rel="noopener">Scholar</a>{{ end }}

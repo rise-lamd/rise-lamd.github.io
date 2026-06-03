@@ -12,9 +12,11 @@ other = "Publicações"
 [nav_news]
 other = "Notícias"
 [nav_join]
-other = "Junte-se"
+other = "Oportunidades"
 [nav_contact]
 other = "Contato"
+[nav_about]
+other = "Sobre"
 
 [people_pi]
 other = "Pesquisador Responsável"
@@ -58,6 +60,9 @@ other = "Voltar ao início"
 [hero_eyebrow]
 other = "Grupo de pesquisa · UNESP"
 
+[hero_subhead]
+other = "Desenvolvemos IA que compreende linguagem, visão e multimídia."
+
 [mod_title]
 other = "Sete sinais, uma representação"
 [mod_body]
@@ -85,3 +90,19 @@ other = "Conhecimento"
 other = "Mais notícias"
 [home_featured_pubs]
 other = "Publicações selecionadas"
+
+[pub_search_placeholder]
+other = "Buscar artigos, autores, veículos..."
+[pub_filter_all]
+other = "Todos"
+[pub_filter_journal]
+other = "Periódicos"
+[pub_filter_conference]
+other = "Conferências"
+[pub_filter_thesis]
+other = "Teses/Dissertações"
+
+[pub_no_results]
+other = "Nenhuma publicação encontrada correspondente à sua busca."
+
+

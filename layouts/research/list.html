@@ -11,9 +11,9 @@
 {{ with where $projects "status" "active" }}
 <section class="projects-group">
   <div class="section-head"><h2>{{ i18n "proj_active" }}</h2></div>
-  {{ range . }}
-    <div class="project">
-      {{ with .image }}<img class="project-img" src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
+  {{ range $index, $project := . }}
+    <div class="project" id="{{ index .title "en" | urlize }}" style="--i: {{ $index }}">
+      {{ with .image }}<img class="project-img" src="{{ . | relURL }}" alt="{{ index $project.title $lang }}" loading="lazy">{{ end }}
       <div class="project-body">
         <h3>{{ index .title $lang }}</h3>
         <p>{{ index .abstract $lang }}</p>
@@ -23,8 +23,8 @@
         </p>
         {{ with .links }}
         <p class="project-links">
-          {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
-          {{ with .paper }}<a href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+          {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Code for {{ index $project.title $lang }}">Code</a>{{ end }}
+          {{ with .paper }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Paper for {{ index $project.title $lang }}">Paper</a>{{ end }}
         </p>
         {{ end }}
       </div>

@@ -12,7 +12,7 @@
 <section class="people-group">
   <div class="section-head"><h2>{{ i18n "people_pi" }}</h2></div>
   <div class="people-grid">
-    {{ range . }}{{ partial "person-card.html" (dict "p" . "lang" $lang) }}{{ end }}
+    {{ range $index, $element := . }}{{ partial "person-card.html" (dict "p" $element "lang" $lang "index" $index) }}{{ end }}
   </div>
 </section>
 {{ end }}
@@ -21,7 +21,7 @@
 <section class="people-group">
   <div class="section-head"><h2>{{ i18n "people_members" }}</h2></div>
   <div class="people-grid">
-    {{ range . }}{{ partial "person-card.html" (dict "p" . "lang" $lang) }}{{ end }}
+    {{ range $index, $element := . }}{{ partial "person-card.html" (dict "p" $element "lang" $lang "index" $index) }}{{ end }}
   </div>
 </section>
 {{ end }}
@@ -30,7 +30,7 @@
 <section class="people-group">
   <div class="section-head"><h2>{{ i18n "people_alumni" }}</h2></div>
   <div class="people-grid">
-    {{ range . }}{{ partial "person-card.html" (dict "p" . "lang" $lang) }}{{ end }}
+    {{ range $index, $element := . }}{{ partial "person-card.html" (dict "p" $element "lang" $lang "index" $index) }}{{ end }}
   </div>
 </section>
 {{ end }}

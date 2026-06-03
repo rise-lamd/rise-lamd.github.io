@@ -3,8 +3,11 @@
   <div class="section-head"><h2>{{ i18n "funding_title" }}</h2></div>
   <div class="funding-logos">
     {{ range . }}
-      <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
-        <img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy">
+      <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}" aria-label="{{ .name }}">
+        <img class="logo-light" src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy">
+        {{ if .logo_dark }}
+          <img class="logo-dark" src="{{ .logo_dark | relURL }}" alt="{{ .name }}" loading="lazy">
+        {{ end }}
       </a>
     {{ end }}
   </div>

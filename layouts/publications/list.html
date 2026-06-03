@@ -7,6 +7,24 @@
   {{ .Content }}
 </article>
 
+<div class="pub-filters" aria-label="{{ i18n "pub_search_placeholder" }}">
+  <div class="search-box">
+    <input type="text" id="pub-search" placeholder="{{ i18n "pub_search_placeholder" }}" aria-label="{{ i18n "pub_search_placeholder" }}">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+  </div>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">{{ i18n "pub_filter_all" }}</button>
+    <button class="filter-btn" data-filter="journal">{{ i18n "pub_filter_journal" }}</button>
+    <button class="filter-btn" data-filter="conference">{{ i18n "pub_filter_conference" }}</button>
+    <button class="filter-btn" data-filter="thesis">{{ i18n "pub_filter_thesis" }}</button>
+  </div>
+</div>
+
+<div id="pub-no-results" class="pub-no-results" style="display: none; text-align: center; padding: 3rem 1.5rem; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 2rem 0;">
+  <span style="font-size: var(--step-1); display: block; margin-bottom: 0.5rem;">🔍</span>
+  {{ i18n "pub_no_results" }}
+</div>
+
 {{ $years := slice }}
 {{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
 {{ $years = uniq $years }}
@@ -15,16 +33,21 @@
   {{ range $years }}
     {{ $y := . }}
     <h2 class="pub-year">{{ $y }}</h2>
-    <ul class="pub-list">
-      {{ range where $pubs "year" $y }}
-        <li>
+    <ul class="pub-list pub-year-section">
+      {{ range $index, $pub := where $pubs "year" $y }}
+        <li class="pub-item" 
+            style="--i: {{ $index }}"
+            data-type="{{ .type }}" 
+            data-title="{{ .title | lower }}" 
+            data-authors="{{ .authors | lower }}" 
+            data-venue="{{ .venue | lower }}">
           <span class="pub-type pub-type-{{ .type }}">{{ .type }}</span>
           <span class="pub-title">{{ .title }}</span>
           <span class="pub-meta">{{ .authors }} · <em>{{ .venue }}</em></span>
           <span class="pub-links">
-            {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
-            {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
-            {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+            {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="DOI for {{ $pub.title }}">DOI</a>{{ end }}
+            {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="PDF for {{ $pub.title }}">PDF</a>{{ end }}
+            {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Code for {{ $pub.title }}">Code</a>{{ end }}
           </span>
         </li>
       {{ end }}
@@ -32,4 +55,77 @@
   {{ end }}
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("pub-search");
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const yearSections = document.querySelectorAll(".pub-year-section");
+
+  function filterPublications() {
+    const query = searchInput.value.toLowerCase().trim();
+    const activeFilter = document.querySelector(".filter-btn.active").getAttribute("data-filter");
+    let totalVisible = 0;
+
+    yearSections.forEach(section => {
+      const items = section.querySelectorAll(".pub-item");
+      let visibleCount = 0;
+
+      items.forEach(item => {
+        const type = item.getAttribute("data-type");
+        const title = item.getAttribute("data-title");
+        const authors = item.getAttribute("data-authors");
+        const venue = item.getAttribute("data-venue");
+
+        const matchesSearch = !query || 
+          title.includes(query) || 
+          authors.includes(query) || 
+          venue.includes(query);
+          
+        const matchesFilter = activeFilter === "all" || type === activeFilter;
+
+        if (matchesSearch && matchesFilter) {
+          item.style.display = "grid";
+          visibleCount++;
+          totalVisible++;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      // Show/hide the entire year block based on whether it has visible children
+      const heading = section.previousElementSibling;
+      if (visibleCount > 0) {
+        section.style.display = "block";
+        if (heading && heading.classList.contains("pub-year")) {
+          heading.style.display = "block";
+        }
+      } else {
+        section.style.display = "none";
+        if (heading && heading.classList.contains("pub-year")) {
+          heading.style.display = "none";
+        }
+      }
+    });
+
+    const noResultsMsg = document.getElementById("pub-no-results");
+    if (noResultsMsg) {
+      noResultsMsg.style.display = totalVisible === 0 ? "block" : "none";
+    }
+  }
+
+  // Search input listener
+  if (searchInput) {
+    searchInput.addEventListener("input", filterPublications);
+  }
+
+  // Filter buttons listener
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", function () {
+      filterButtons.forEach(b => b.classList.remove("active"));
+      this.classList.add("active");
+      filterPublications();
+    });
+  });
+});
+</script>
 {{ end }}
