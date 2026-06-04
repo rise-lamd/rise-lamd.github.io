@@ -17,7 +17,8 @@
 </section>
 {{ end }}
 
-{{ with where (where $people "pi" "!=" true) "alumni" "!=" true }}
+{{ $members := where (where (where $people "pi" "!=" true) "alumni" "!=" true) "collaborator" "!=" true }}
+{{ with $members }}
 <section class="people-group">
   <div class="section-head"><h2>{{ i18n "people_members" }}</h2></div>
   <div class="people-grid">
@@ -26,7 +27,16 @@
 </section>
 {{ end }}
 
-{{ with where $people "alumni" true }}
+{{ with sort (where $people "collaborator" true) "name" }}
+<section class="people-group">
+  <div class="section-head"><h2>{{ i18n "people_collaborators" }}</h2></div>
+  <div class="people-grid">
+    {{ range $index, $element := . }}{{ partial "person-card.html" (dict "p" $element "lang" $lang "index" $index) }}{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with sort (where $people "alumni" true) "name" }}
 <section class="people-group">
   <div class="section-head"><h2>{{ i18n "people_alumni" }}</h2></div>
   <div class="people-grid">

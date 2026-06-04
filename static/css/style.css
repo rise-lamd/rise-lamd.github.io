@@ -493,6 +493,8 @@ section { margin: clamp(2.5rem, 2rem + 2vw, 4rem) 0; }
 .person-links { display: flex; gap: 0.6rem; font-size: 0.85rem; margin: 0.6rem 0 0; align-items: center; flex-wrap: wrap; }
 .person-links a { color: var(--muted); font-weight: 500; min-height: 32px; display: inline-flex; align-items: center; }
 .person-links a:hover { color: var(--accent); }
+.link-icon { width: 18px; height: 18px; object-fit: contain; display: block; opacity: 0.7; transition: opacity 0.15s; }
+.person-links a:hover .link-icon { opacity: 1; }
 
 /* ---------- Projects ---------- */
 .project {

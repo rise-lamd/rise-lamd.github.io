@@ -8,11 +8,11 @@
     {{ with $p.interests }}<p class="person-interests">{{ index . $lang }}</p>{{ end }}
     {{ with $p.now }}<p class="person-now"><strong>{{ i18n "people_now" }}</strong> {{ index . $lang }}</p>{{ end }}
     <div class="person-links">
-      {{ with $p.email }}<a href="mailto:{{ . }}" aria-label="Email {{ $p.name }}">✉</a>{{ end }}
+      {{ with $p.email }}<a href="mailto:{{ . }}" aria-label="Email {{ $p.name }}"><svg class="link-icon link-icon--email" viewBox="0 0 24 24" fill="none" stroke="#4A90E2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg></a>{{ end }}
       {{ with $p.links }}
-        {{ with .lattes }}<a href="{{ . }}" target="_blank" rel="noopener">Lattes</a>{{ end }}
-        {{ with .scholar }}<a href="{{ . }}" target="_blank" rel="noopener">Scholar</a>{{ end }}
-        {{ with .orcid }}<a href="{{ . }}" target="_blank" rel="noopener">ORCID</a>{{ end }}
+        {{ with .lattes }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Lattes {{ $p.name }}">Lattes</a>{{ end }}
+        {{ with .scholar }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Google Scholar {{ $p.name }}"><img src="/img/scholar.png" alt="Google Scholar" class="link-icon"></a>{{ end }}
+        {{ with .orcid }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="ORCID {{ $p.name }}"><img src="/img/orcid.svg" alt="ORCID" class="link-icon"></a>{{ end }}
       {{ end }}
     </div>
   </div>

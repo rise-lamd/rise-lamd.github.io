@@ -30,6 +30,8 @@ other = "Pesquisador Responsável"
 other = "Membros"
 [people_alumni]
 other = "Egressos"
+[people_collaborators]
+other = "Colaboradores"
 [people_now]
 other = "Atualmente:"
 
