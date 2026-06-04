@@ -11,6 +11,7 @@
 
 # Agent / temporary files
 .claude/
+.impeccable/
 .tmp_impeccable/
 .venv/
 

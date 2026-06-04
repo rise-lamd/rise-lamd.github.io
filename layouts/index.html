@@ -20,10 +20,6 @@
       <circle cx="464" cy="90"  r="3"/><circle cx="521" cy="157" r="3"/>
       <circle cx="551" cy="241" r="3"/>
     </g>
-    <circle class="pulse" r="3.4" style="offset-path:path('M136 90 L300 285')"/>
-    <circle class="pulse" r="3.4" style="offset-path:path('M213 45 L300 285')"/>
-    <circle class="pulse" r="3.4" style="offset-path:path('M387 45 L300 285')"/>
-    <circle class="pulse" r="3.4" style="offset-path:path('M464 90 L300 285')"/>
     <circle cx="300" cy="285" r="13" fill="#1aa3e0" opacity="0.35"/>
     <circle cx="300" cy="285" r="9" fill="#1aa3e0"/>
     <circle cx="300" cy="285" r="4" fill="#eaf9ff"/>
@@ -35,12 +31,12 @@
     </div>
     <p class="eyebrow">{{ i18n "hero_eyebrow" }}</p>
     <h1>{{ .Site.Params.groupNameShort }}</h1>
-    <p class="hero-tagline">{{ .Site.Language.Params.tagline }}</p>
+    <p class="hero-fullname">{{ i18n "hero_fullname" }}</p>
     <p class="hero-subhead">{{ i18n "hero_subhead" }}</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="{{ "/research/" | relLangURL }}">{{ i18n "nav_research" }}</a>
       <a class="btn" href="{{ "/people/" | relLangURL }}">{{ i18n "nav_people" }}</a>
-      <a class="btn" href="{{ "/opportunities/" | relLangURL }}">{{ i18n "nav_join" }}</a>
+      <a class="btn" href="{{ "/opportunities/" | relLangURL }}">{{ i18n "nav_opportunities" }}</a>
     </div>
   </div>
 </section>

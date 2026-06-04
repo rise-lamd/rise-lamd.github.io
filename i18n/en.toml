@@ -3,6 +3,12 @@
 
 [nav_home]
 other = "Home"
+
+[nav_menu]
+other = "Navigation menu"
+
+[lang_select]
+other = "Select language"
 [nav_people]
 other = "People"
 [nav_research]
@@ -11,7 +17,7 @@ other = "Research"
 other = "Publications"
 [nav_news]
 other = "News"
-[nav_join]
+[nav_opportunities]
 other = "Opportunities"
 [nav_contact]
 other = "Contact"
@@ -59,6 +65,9 @@ other = "Back to home"
 
 [hero_eyebrow]
 other = "Research group · UNESP"
+
+[hero_fullname]
+other = "Recognition, Inference and Search on Language and Multimedia Data"
 
 [hero_subhead]
 other = "We build AI that understands language, vision, and multimedia."

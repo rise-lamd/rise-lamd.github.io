@@ -29,12 +29,14 @@ enableGitInfo = true   # lets templates show "last updated" from git history
     locale = "en-US"
     weight = 1
     [languages.en.params]
+      flag = "us"
       tagline = "Recognition, inference, and search over language and multimedia data — natural language processing, computer vision, and information retrieval."
   [languages.pt]
     label = "Português"
     locale = "pt-BR"
     weight = 2
     [languages.pt.params]
+      flag = "br"
       tagline = "Reconhecimento, inferência e busca em dados de linguagem e multimídia — processamento de linguagem natural, visão computacional e recuperação de informação."
 
 # ------------------------------------------------------------
@@ -67,7 +69,7 @@ enableGitInfo = true   # lets templates show "last updated" from git history
     pageRef = "/news"
     weight = 6
   [[menus.main]]
-    identifier = "join"
+    identifier = "opportunities"
     pageRef = "/opportunities"
     weight = 7
   [[menus.main]]

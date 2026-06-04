@@ -4,6 +4,7 @@
   {{- /* No-flash theme: set data-theme before first paint. */ -}}
   <script>
     (function () {
+      document.documentElement.classList.add('js');
       try {
         var t = localStorage.getItem('theme');
         if (t !== 'light' && t !== 'dark') {
@@ -18,6 +19,15 @@
   </title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.groupNameFull }}{{ end }}">
   <meta name="theme-color" content="#101a2e">
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Params.groupNameShort }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.groupNameShort }}{{ else }}{{ .Title }} · {{ .Site.Params.groupNameShort }}{{ end }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.groupNameFull }}{{ end }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.groupNameShort }}{{ else }}{{ .Title }} · {{ .Site.Params.groupNameShort }}{{ end }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.groupNameFull }}{{ end }}">
   <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/favicon-32x32.png" | relURL }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "img/favicon-16x16.png" | relURL }}">

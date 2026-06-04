@@ -3,6 +3,12 @@
 
 [nav_home]
 other = "Início"
+
+[nav_menu]
+other = "Menu de navegação"
+
+[lang_select]
+other = "Selecionar idioma"
 [nav_people]
 other = "Equipe"
 [nav_research]
@@ -11,7 +17,7 @@ other = "Pesquisa"
 other = "Publicações"
 [nav_news]
 other = "Notícias"
-[nav_join]
+[nav_opportunities]
 other = "Oportunidades"
 [nav_contact]
 other = "Contato"
@@ -59,6 +65,9 @@ other = "Voltar ao início"
 
 [hero_eyebrow]
 other = "Grupo de pesquisa · UNESP"
+
+[hero_fullname]
+other = "Reconhecimento, Inferência e Busca em Dados de Linguagem e Multimídia"
 
 [hero_subhead]
 other = "Desenvolvemos IA que compreende linguagem, visão e multimídia."
