@@ -1,40 +1,57 @@
 # ============================================================
-#  PUBLICATIONS  —  source of truth for the Publications page.
-#  Listed automatically newest-first (by  year, then weight).
-#  To add a paper: copy a block to the top, fill it in.
+#  PUBLICATIONS  —  the source of truth for the Publications page.
+#  Entries are listed newest-first by year.
 #
-#  type:  journal | conference | thesis | preprint | chapter
-#  featured: true   -> also shown in "Selected publications" on the home page
-#
-#  NOTE: titles/venues are language-neutral (kept as written/published),
-#  so no { en, pt } needed here.
-#
-#  Want to import from BibTeX (Zotero/Mendeley export) instead of typing
-#  these by hand? See the "Importing publications from BibTeX" section
-#  in CONTRIBUTING.md — there's a one-command script.
+#  showcase: true + visual: renders a compact visual publication row.
+#  Text in summary, highlights, visual.alt, and visual.caption is bilingual.
 # ============================================================
 
-- title: "An Example Journal Paper on Applied Machine Learning"
-  authors: "Almeida, T.; Advisor, A."
-  venue: "Journal of Intelligent Systems"
+- title: "Effective Graph and Rank-based Contextual Embeddings for Textual and Multimedia Data"
+  authors: "Thiago César Castilho Almeida; Gustavo Rosseto Letício; Lucas Pascotti Valem; André Freitas; Daniel Carlos Guimarães Pedronette"
+  venue: "International Joint Conference on Neural Networks (IJCNN)"
   year: 2025
-  type: journal
+  type: conference
   featured: true
-  doi: "https://doi.org/10.0000/example"
-  pdf: ""        # optional direct PDF link
-  code: ""       # optional code/dataset link
+  showcase: true
+  summary:
+    en: "GRaCE is a fully unsupervised framework that uses rank-based measures to select representative nodes and construct interpretable contextual embeddings for textual and multimedia data."
+    pt: "O GRaCE é um framework totalmente não supervisionado que utiliza medidas baseadas em rankings para selecionar nós representativos e construir embeddings contextuais interpretáveis para dados textuais e multimídia."
+  highlights:
+    en:
+      - "Constructs low-dimensional embeddings whose dimensions are tied to representative elements from the collection."
+      - "Selects effective, non-redundant representatives and evaluates the embeddings in retrieval, classification, and clustering."
+    pt:
+      - "Constrói embeddings de baixa dimensionalidade cujas dimensões estão associadas a elementos representativos da coleção."
+      - "Seleciona representantes eficazes e não redundantes e avalia os embeddings em recuperação, classificação e agrupamento."
+  visual:
+    src: "/img/publications/grace/grace-pipeline.png"
+    alt:
+      en: "Seven-step GRaCE pipeline, from a textual or multimedia collection to interpretable low-dimensional node embeddings."
+      pt: "Pipeline do GRaCE em sete etapas, de uma coleção textual ou multimídia até embeddings interpretáveis de nós em baixa dimensionalidade."
+    caption:
+      en: "GRaCE pipeline for textual and multimedia data."
+      pt: "Pipeline do GRaCE para dados textuais e multimídia."
+  doi: "https://doi.org/10.1109/IJCNN64981.2025.11229362"
+  pdf: ""
+  code: "https://pypi.org/project/interpretable-embeddings/"
+  project: ""
+  supplementary: ""
+  poster: ""
+  dataset: ""
+  video: ""
 
-- title: "An Example Conference Paper"
-  authors: "Advisor, A.; Almeida, T.; Collaborator, C."
-  venue: "Proc. of the Intl. Conf. on Machine Learning Applications (ICMLA)"
-  year: 2024
+- title: "Unsupervised Effectiveness Estimation Measure Based on Rank Correlation for Image Retrieval"
+  authors: "Thiago César Castilho Almeida; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "Advances in Visual Computing"
+  year: 2025
   type: conference
   featured: false
-  doi: "https://doi.org/10.0000/example2"
-
-- title: "Dissertation Title Example"
-  authors: "Almeida, T."
-  venue: "MSc Dissertation, UNESP"
-  year: 2024
-  type: thesis
+  showcase: false
+  doi: ""
   pdf: ""
+  code: ""
+  project: ""
+  supplementary: ""
+  poster: ""
+  dataset: ""
+  video: ""

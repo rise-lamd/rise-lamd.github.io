@@ -90,3 +90,10 @@ favicon/Apple-touch fallback) remain in the tree; the SVGs are authoritative.
 - `layouts/index.html` — signal-field hero + modalities.
 - `layouts/404.html` — "Lost signal".
 - Inner templates carry `.signal-rule` under each title.
+
+## Publication rows
+
+Publications use compact, separated rows rather than large cards. A visual
+showcase keeps the diagram in a constrained left column and the paper details
+on the right; entries without artwork fall back to a narrow venue badge. All
+resource links are optional and render only when their URL is present.

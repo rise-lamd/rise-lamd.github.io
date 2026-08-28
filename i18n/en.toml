@@ -116,4 +116,23 @@ other = "Theses"
 [pub_no_results]
 other = "No publications found matching your search."
 
-
+[pub_contributions]
+other = "Key contributions"
+[pub_open_visual]
+other = "Open full-size diagram"
+[pub_link_doi]
+other = "DOI"
+[pub_link_pdf]
+other = "PDF"
+[pub_link_code]
+other = "Code"
+[pub_link_project]
+other = "Project"
+[pub_link_supplementary]
+other = "Supplementary"
+[pub_link_poster]
+other = "Poster"
+[pub_link_dataset]
+other = "Dataset"
+[pub_link_video]
+other = "Video"

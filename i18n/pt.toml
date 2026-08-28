@@ -116,4 +116,23 @@ other = "Teses/Dissertações"
 [pub_no_results]
 other = "Nenhuma publicação encontrada correspondente à sua busca."
 
-
+[pub_contributions]
+other = "Principais contribuições"
+[pub_open_visual]
+other = "Abrir diagrama em tamanho completo"
+[pub_link_doi]
+other = "DOI"
+[pub_link_pdf]
+other = "PDF"
+[pub_link_code]
+other = "Código"
+[pub_link_project]
+other = "Projeto"
+[pub_link_supplementary]
+other = "Material suplementar"
+[pub_link_poster]
+other = "Pôster"
+[pub_link_dataset]
+other = "Conjunto de dados"
+[pub_link_video]
+other = "Vídeo"

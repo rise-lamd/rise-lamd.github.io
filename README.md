@@ -213,11 +213,20 @@ Edit [`data/publications.yaml`](data/publications.yaml). Add a block at the **to
   featured: true         # true → also appears on the home page
   doi: "https://doi.org/..."
   pdf: ""                # optional direct PDF link
-  code: ""               # optional code/dataset link
+  code: ""               # optional code link
+  project: ""            # optional project page
+  supplementary: ""      # optional supplementary material
+  poster: ""              # optional poster
+  dataset: ""             # optional dataset
+  video: ""               # optional video
 ```
 
 Papers are grouped by year automatically. (Have a `.bib` file? See
 [Importing from BibTeX](#importing-publications-from-bibtex).)
+
+For a compact visual publication row, use the GRaCE entry in `data/publications.yaml` as a
+template. Add `showcase: true`, a bilingual `summary`, bilingual `highlights`,
+and a `visual` block pointing to an image under `static/img/publications/`.
 
 ### ➕ Add or archive a project
 

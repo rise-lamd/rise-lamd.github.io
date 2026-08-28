@@ -41,6 +41,15 @@ Edit **`data/people.yaml`**. Copy an existing block and change the fields.
 
 Edit **`data/publications.yaml`**. Copy the top block, fill it in. Newest papers
 go at the top. Set `featured: true` to also show it on the home page.
+
+To create a compact visual publication row with a diagram, set `showcase: true`,
+add a `visual` block, and fill the bilingual `summary` and `highlights` fields.
+Put the diagram in `static/img/publications/<paper-name>/`. The GRaCE entry is
+the canonical example.
+
+Optional publication links are shown only when filled: `doi`, `pdf`, `project`,
+`supplementary`, `poster`, `dataset`, `code`, and `video`.
+
 (Prefer importing from BibTeX? See the last section.)
 
 ## 3. Add / archive a project

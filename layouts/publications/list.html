@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
 {{ $pubs := sort hugo.Data.publications "year" "desc" }}
 
 <article class="prose">
@@ -41,20 +42,56 @@
     <h2 class="pub-year">{{ $y }}</h2>
     <ul class="pub-list pub-year-section">
       {{ range $index, $pub := where $pubs "year" $y }}
-        <li class="pub-item" 
+        {{ $hasVisual := and .showcase .visual }}
+        <li class="pub-item{{ if $hasVisual }} pub-item-showcase{{ end }}"
             style="--i: {{ $index }}"
             data-type="{{ .type }}" 
             data-title="{{ .title | lower }}" 
             data-authors="{{ .authors | lower }}" 
             data-venue="{{ .venue | lower }}">
-          <span class="pub-type pub-type-{{ .type }}">{{ .type }}</span>
-          <span class="pub-title">{{ .title }}</span>
-          <span class="pub-meta">{{ .authors }} · <em>{{ .venue }}</em></span>
-          <span class="pub-links">
-            {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="DOI for {{ $pub.title }}">DOI</a>{{ end }}
-            {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="PDF for {{ $pub.title }}">PDF</a>{{ end }}
-            {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Code for {{ $pub.title }}">Code</a>{{ end }}
-          </span>
+          {{ if $hasVisual }}
+            {{ with .visual }}
+            <figure class="pub-visual">
+              <a class="pub-visual-link" href="{{ .src | relURL }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_open_visual" }}: {{ $pub.title }}">
+                <img src="{{ .src | relURL }}" alt="{{ index .alt $lang }}" loading="lazy" decoding="async">
+              </a>
+              <figcaption>
+                {{ index .caption $lang }}
+                <a href="{{ .src | relURL }}" target="_blank" rel="noopener">{{ i18n "pub_open_visual" }}</a>
+              </figcaption>
+            </figure>
+            {{ end }}
+          {{ end }}
+
+          <div class="pub-content">
+            <span class="pub-type pub-type-{{ .type }}">{{ .type }}</span>
+            <h3 class="pub-title">{{ .title }}</h3>
+            <p class="pub-meta">{{ .authors }} · <em>{{ .venue }}</em>, {{ .year }}</p>
+
+            {{ if not $hasVisual }}
+              {{ with .summary }}<p class="pub-summary">{{ index . $lang }}</p>{{ end }}
+            {{ end }}
+
+            {{ with .highlights }}
+            <div class="pub-highlights">
+              {{ if not $hasVisual }}<h4>{{ i18n "pub_contributions" }}</h4>{{ end }}
+              <ul>
+                {{ range index . $lang }}<li>{{ . }}</li>{{ end }}
+              </ul>
+            </div>
+            {{ end }}
+
+            <div class="pub-links">
+              {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="DOI: {{ $pub.title }}">{{ i18n "pub_link_doi" }}</a>{{ end }}
+              {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="PDF: {{ $pub.title }}">{{ i18n "pub_link_pdf" }}</a>{{ end }}
+              {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_code" }}: {{ $pub.title }}">{{ i18n "pub_link_code" }}</a>{{ end }}
+              {{ with .project }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_project" }}: {{ $pub.title }}">{{ i18n "pub_link_project" }}</a>{{ end }}
+              {{ with .supplementary }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_supplementary" }}: {{ $pub.title }}">{{ i18n "pub_link_supplementary" }}</a>{{ end }}
+              {{ with .poster }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_poster" }}: {{ $pub.title }}">{{ i18n "pub_link_poster" }}</a>{{ end }}
+              {{ with .dataset }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_dataset" }}: {{ $pub.title }}">{{ i18n "pub_link_dataset" }}</a>{{ end }}
+              {{ with .video }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_video" }}: {{ $pub.title }}">{{ i18n "pub_link_video" }}</a>{{ end }}
+            </div>
+          </div>
         </li>
       {{ end }}
     </ul>
@@ -62,7 +99,7 @@
 </section>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
   const searchInput = document.getElementById("pub-search");
   const filterButtons = document.querySelectorAll(".filter-btn");
   const yearSections = document.querySelectorAll(".pub-year-section");
@@ -132,6 +169,8 @@ document.addEventListener("DOMContentLoaded", function () {
       filterPublications();
     });
   });
-});
+
+  filterPublications();
+})();
 </script>
 {{ end }}
