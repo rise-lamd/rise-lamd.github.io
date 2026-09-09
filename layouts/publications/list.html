@@ -16,11 +16,11 @@
       <line x1="13" y1="13" x2="17.5" y2="17.5"/>
     </svg>
   </div>
-  <div class="filter-buttons">
-    <button class="filter-btn active" data-filter="all">{{ i18n "pub_filter_all" }}</button>
-    <button class="filter-btn" data-filter="journal">{{ i18n "pub_filter_journal" }}</button>
-    <button class="filter-btn" data-filter="conference">{{ i18n "pub_filter_conference" }}</button>
-    <button class="filter-btn" data-filter="thesis">{{ i18n "pub_filter_thesis" }}</button>
+  <div class="filter-buttons" role="group" aria-label="{{ i18n "pub_filter_all" }}">
+    <button class="filter-btn active" data-filter="all" aria-pressed="true">{{ i18n "pub_filter_all" }}</button>
+    <button class="filter-btn" data-filter="journal" aria-pressed="false">{{ i18n "pub_filter_journal" }}</button>
+    <button class="filter-btn" data-filter="conference" aria-pressed="false">{{ i18n "pub_filter_conference" }}</button>
+    <button class="filter-btn" data-filter="thesis" aria-pressed="false">{{ i18n "pub_filter_thesis" }}</button>
   </div>
 </div>
 
@@ -83,6 +83,7 @@
 
             <div class="pub-links">
               {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="DOI: {{ $pub.title }}">{{ i18n "pub_link_doi" }}</a>{{ end }}
+              {{ with .arxiv }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="arXiv: {{ $pub.title }}">{{ i18n "pub_link_arxiv" }}</a>{{ end }}
               {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="PDF: {{ $pub.title }}">{{ i18n "pub_link_pdf" }}</a>{{ end }}
               {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_code" }}: {{ $pub.title }}">{{ i18n "pub_link_code" }}</a>{{ end }}
               {{ with .project }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_link_project" }}: {{ $pub.title }}">{{ i18n "pub_link_project" }}</a>{{ end }}
@@ -164,8 +165,12 @@
   // Filter buttons listener
   filterButtons.forEach(btn => {
     btn.addEventListener("click", function () {
-      filterButtons.forEach(b => b.classList.remove("active"));
+      filterButtons.forEach(b => {
+        b.classList.remove("active");
+        b.setAttribute("aria-pressed", "false");
+      });
       this.classList.add("active");
+      this.setAttribute("aria-pressed", "true");
       filterPublications();
     });
   });

@@ -76,12 +76,17 @@ first automatically, and the 3 latest show on the home page.
 - Funding agency logos: `data/funding.yaml` (put logo images in `static/img/funding/`)
 - Menu order / labels: menu structure is in `hugo.toml`; the visible labels are
   in `i18n/en.toml` and `i18n/pt.toml`.
-- Colors / branding: the variables at the top of `static/css/style.css`.
+- Colors / branding: design tokens at the top of `static/css/style.css` (see `DESIGN.md` for the design system guide).
 
-## 6. Edit the static page text (Home, Join us, Contact intro)
+## 6. Edit the static page text (Home, About, Opportunities, Contact)
 
-Those live in `content/` as Markdown, one file per language
-(`_index.en.md` / `_index.pt.md`). Edit the text below the `---` block.
+Those live in `content/` as Markdown, one file per language (`_index.en.md` / `_index.pt.md`):
+- Home: `content/_index.{en,pt}.md`
+- About: `content/about/_index.{en,pt}.md`
+- Opportunities: `content/opportunities/_index.{en,pt}.md`
+- Contact: `content/contact/_index.{en,pt}.md`
+
+Edit the text below the `---` frontmatter block.
 
 ---
 

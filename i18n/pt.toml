@@ -71,8 +71,6 @@ other = "Grupo de pesquisa · UNESP"
 [hero_fullname]
 other = "Reconhecimento, Inferência e Busca em Dados de Linguagem e Multimídia"
 
-[hero_subhead]
-other = "Desenvolvemos IA que compreende linguagem, visão e multimídia."
 
 [mod_title]
 other = "Sete sinais, uma representação"
@@ -122,6 +120,8 @@ other = "Principais contribuições"
 other = "Abrir diagrama em tamanho completo"
 [pub_link_doi]
 other = "DOI"
+[pub_link_arxiv]
+other = "arXiv"
 [pub_link_pdf]
 other = "PDF"
 [pub_link_code]

@@ -10,7 +10,9 @@
 .vscode/
 
 # Agent / temporary files
+.agents/
 .claude/
+.gemini/
 .impeccable/
 .tmp_impeccable/
 .venv/

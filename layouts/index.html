@@ -2,7 +2,7 @@
 
 <section class="hero">
   <svg class="hero-rays" viewBox="0 0 600 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
-    <g fill="none" stroke="#9fe0ff" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="1 7" opacity="0.34">
+    <g fill="none" stroke="var(--field-cyan)" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="1 7" opacity="0.34">
       <line x1="300" y1="285" x2="49"  y2="241"/>
       <line x1="300" y1="285" x2="79"  y2="157"/>
       <line x1="300" y1="285" x2="136" y2="90"/>
@@ -13,16 +13,16 @@
       <line x1="300" y1="285" x2="521" y2="157"/>
       <line x1="300" y1="285" x2="551" y2="241"/>
     </g>
-    <g fill="#9fe0ff" opacity="0.6">
+    <g fill="var(--field-cyan)" opacity="0.6">
       <circle cx="49"  cy="241" r="3"/><circle cx="79"  cy="157" r="3"/>
       <circle cx="136" cy="90"  r="3"/><circle cx="213" cy="45"  r="3"/>
       <circle cx="300" cy="30"  r="3"/><circle cx="387" cy="45"  r="3"/>
       <circle cx="464" cy="90"  r="3"/><circle cx="521" cy="157" r="3"/>
       <circle cx="551" cy="241" r="3"/>
     </g>
-    <circle cx="300" cy="285" r="13" fill="#1aa3e0" opacity="0.35"/>
-    <circle cx="300" cy="285" r="9" fill="#1aa3e0"/>
-    <circle cx="300" cy="285" r="4" fill="#eaf9ff"/>
+    <circle cx="300" cy="285" r="13" fill="var(--accent)" opacity="0.35"/>
+    <circle cx="300" cy="285" r="9" fill="var(--accent)"/>
+    <circle cx="300" cy="285" r="4" fill="var(--field-ink)"/>
   </svg>
   <span class="hero-glow" aria-hidden="true"></span>
   <div class="hero-inner">
@@ -32,7 +32,6 @@
     <p class="eyebrow">{{ i18n "hero_eyebrow" }}</p>
     <h1>{{ .Site.Params.groupNameShort }}</h1>
     <p class="hero-fullname">{{ i18n "hero_fullname" }}</p>
-    <p class="hero-subhead">{{ i18n "hero_subhead" }}</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="{{ "/research/" | relLangURL }}">{{ i18n "nav_research" }}</a>
       <a class="btn" href="{{ "/people/" | relLangURL }}">{{ i18n "nav_people" }}</a>
@@ -77,7 +76,12 @@
       <li>
         <span class="pub-title">{{ .title }}</span>
         <span class="pub-meta">{{ .authors }} · <em>{{ .venue }}</em>, {{ .year }}</span>
-        {{ with .doi }}<a class="pub-link" href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+        <div class="pub-links" style="margin-top: 0.4rem;">
+          {{ with .doi }}<a href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+          {{ with .arxiv }}<a href="{{ . }}" target="_blank" rel="noopener">arXiv</a>{{ end }}
+          {{ with .pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+          {{ with .code }}<a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "pub_link_code" }}</a>{{ end }}
+        </div>
       </li>
     {{ end }}
   </ul>

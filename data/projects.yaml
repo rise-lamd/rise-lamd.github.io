@@ -5,26 +5,20 @@
 # ============================================================
 
 - title:
-    en: "Natural Language Understanding & Search"
-    pt: "Compreensão de Linguagem Natural e Busca"
+    en: "RATIONAL — Robust Augmented Retrieval for Natural Language Inference"
+    pt: "RATIONAL — Recuperação Aumentada Robusta para Inferência em Linguagem Natural"
   status: active
   weight: 1
   image: "/img/placeholder.svg"
   abstract:
     en: >
-      One short paragraph describing the project: the problem, the approach,
-      and the expected outcome. Keep it readable for a non-specialist.
-      (Example: information retrieval and question answering over Portuguese text.)
+      International collaborative research project between Idiap Research Institute (Switzerland) and UNESP (Brazil), funded jointly by FAPESP and SNSF. The project investigates and develops robust evidence-based methods, retrieved through Information Retrieval techniques, for natural language inference tasks supported by Large Language Models (LLMs). Funded positions for Postdoctoral and Technical Training (TT-4) are currently open.
     pt: >
-      Um parágrafo curto descrevendo o projeto: o problema, a abordagem
-      e o resultado esperado. Mantenha legível para não especialistas.
-      (Ex.: recuperação de informação e resposta a perguntas em textos em português.)
-  funding: "FAPESP #2025/00000-0"
+      Projeto de cooperação internacional entre o Idiap Research Institute (Suíça) e a UNESP (Brasil), com financiamento bilateral conjunto da FAPESP e da SNSF (Suíça). Investiga e desenvolve métodos robustos baseados em evidências, obtidas por meio de técnicas de Recuperação de Informação, para tarefas de inferência em linguagem natural apoiadas por Grandes Modelos de Linguagem (LLMs). Bolsas de Pós-Doutorado e Treinamento Técnico (TT-4) abertas.
+  funding: "FAPESP (Brazil) / SNSF (Switzerland)"
   collaborators:
-    - "Partner Lab, University Y"
-  links:
-    code: "https://github.com/your-org/your-repo"
-    # paper: "https://doi.org/..."
+    - "Idiap Research Institute (Switzerland)"
+    - "UNESP — DEMAC / IGCE Rio Claro"
 
 - title:
     en: "Multimedia Recognition & Retrieval"

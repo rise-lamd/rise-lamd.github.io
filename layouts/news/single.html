@@ -1,8 +1,16 @@
 {{ define "main" }}
 <article class="prose news-single">
-  <span class="news-date">{{ .Date.Format "2006-01-02" }}</span>
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <header class="news-single-header">
+    <div class="news-meta-row">
+      <time class="news-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+      <span class="news-tag">{{ i18n "nav_news" }}</span>
+    </div>
+    <h1 class="news-single-title">{{ .Title }}</h1>
+    <div class="signal-rule" aria-hidden="true"></div>
+  </header>
+  <div class="news-single-body">
+    {{ .Content }}
+  </div>
   <p class="back-link"><a href="{{ "/news" | relLangURL }}">← {{ i18n "nav_news" }}</a></p>
 </article>
 {{ end }}

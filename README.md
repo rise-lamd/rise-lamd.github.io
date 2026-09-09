@@ -1,8 +1,8 @@
 # RISE-LAMD — Research Group Website
 
 Bilingual (English 🇬🇧 + Portuguese 🇧🇷) website for **RISE-LAMD — Recognition,
-Inference and Search on Language and Multimedia Data**, a research group at
-**UNESP**, built with [Hugo](https://gohugo.io).
+Inference and Search on Language and Multimedia Data**, a research laboratory at
+**UNESP** (DEMAC / IGCE — Câmpus de Rio Claro, linked to UNESPetro), built with [Hugo](https://gohugo.io).
 
 It is designed around one principle: **anyone in the group can keep it up to date
 by editing plain-text files.** You do not need to know HTML, CSS, or web
@@ -94,17 +94,19 @@ RISE-LAMD/
 ├── content/                  # ★ Page text & news, as Markdown ★
 │   ├── _index.en.md          #   home page text (English)
 │   ├── _index.pt.md          #   home page text (Portuguese)
+│   ├── about/                #   history, mission, coordination & partners
 │   ├── people/               #   intro text for the People page
-│   ├── research/
-│   ├── publications/
+│   ├── research/             #   intro text for the Research page
+│   ├── publications/         #   intro text for the Publications page
 │   ├── news/                 #   one file pair (.en.md/.pt.md) per news post
-│   ├── join/
-│   └── contact/
+│   ├── opportunities/        #   opportunities & joining the lab (alias: /join/)
+│   └── contact/              #   intro text for the Contact page
 │
 ├── layouts/                  # HTML templates (the design — rarely touched)
 │   ├── _default/             #   baseof (page skeleton), single, list
 │   ├── partials/             #   reusable bits: header, footer, person-card, funding
 │   ├── index.html            #   home page layout
+│   ├── about/list.html       #   about page layout
 │   ├── people/list.html      #   renders data/people.yaml
 │   ├── research/list.html    #   renders data/projects.yaml
 │   ├── publications/list.html#   renders data/publications.yaml
@@ -116,7 +118,7 @@ RISE-LAMD/
 │   └── pt.toml
 │
 ├── static/                   # Files served as-is
-│   ├── css/style.css         #   all styling (brand colors at the top)
+│   ├── css/style.css         #   all styling (The Signal Field design tokens & themes)
 │   └── img/                  #   photos & logos go here
 │
 ├── scripts/
@@ -126,6 +128,7 @@ RISE-LAMD/
 │   └── deploy.yml            # auto-build & deploy to GitHub Pages
 │
 ├── CONTRIBUTING.md           # short task-oriented cheat sheet
+├── DESIGN.md                 # visual system & design tokens guide
 └── README.md                 # this file
 ```
 
@@ -252,7 +255,7 @@ To retire a finished project, just change `status: active` → `status: archived
 News posts are Markdown files, **one pair per post** (English + Portuguese).
 The easiest way is to copy the existing example:
 
-1. Copy `content/news/2025-05-20-group-officialized.en.md` and its `.pt.md` twin.
+1. Copy `content/news/2025-09-29-group-officialized.en.md` and its `.pt.md` twin.
 2. Rename **both**, starting with today's date:
    ```
    content/news/2026-03-15-best-paper-award.en.md
@@ -273,11 +276,16 @@ The easiest way is to copy the existing example:
 Newest posts appear first, and the 3 most recent show on the home page — all
 automatically.
 
-### ✏️ Edit fixed page text (Home, Join us, Contact intro)
+### ✏️ Edit fixed page text (Home, About, Opportunities, Contact)
 
-These live in `content/` as Markdown, one file per language
-(`_index.en.md` / `_index.pt.md`). Edit the text below the `---` block. The
-"Join us" page describes who you're looking for and how to apply.
+These live in `content/` as Markdown, one file pair per page
+(`_index.en.md` / `_index.pt.md`):
+- **Home:** `content/_index.{en,pt}.md` (intro statement, callout)
+- **About:** `content/about/_index.{en,pt}.md` (institutional history, mission, coordination, partner labs)
+- **Opportunities:** `content/opportunities/_index.{en,pt}.md` (open positions, profiles sought, application process; aliases: `/join/`)
+- **Contact:** `content/contact/_index.{en,pt}.md` (intro paragraph above the contact grid)
+
+Edit the text below the `---` frontmatter block.
 
 ### ✏️ Change contact info / funding logos / menu
 
@@ -309,17 +317,36 @@ The language switcher (top-right **EN / PT**) links each page to its translation
 
 ## Styling & branding
 
-All visual styling is in one file: [`static/css/style.css`](static/css/style.css).
-The brand colors are CSS variables at the very top — change these to match the
-official UNESP palette:
+The site uses **The Signal Field** design system — an instrument-grade aesthetic built with modern CSS OKLCH tokens, supporting automatic/manual dark and light modes.
+
+All styling lives in [`static/css/style.css`](static/css/style.css) and is thoroughly documented in [`DESIGN.md`](DESIGN.md).
+
+Design tokens are defined as CSS variables at the top of `style.css`:
 
 ```css
+/* Theme: DARK (default) */
 :root {
-  --brand:        #0b3d62;   /* primary color */
-  --brand-accent: #c8102e;   /* accent color  */
+  --bg:        oklch(0.185 0.028 260);   /* deep navy canvas */
+  --surface:   oklch(0.225 0.034 260);   /* cards & containers */
+  --ink:       oklch(0.955 0.008 250);   /* crisp luminous text */
+  --muted:     oklch(0.74 0.022 250);    /* secondary text */
+  --line:      oklch(0.32 0.03 260);     /* borders & dividers */
+  --accent:    oklch(0.74 0.135 228);   /* cyan signal */
+  --link:      oklch(0.82 0.11 220);    /* WCAG AA text-safe accent */
+  --grow:      oklch(0.76 0.15 150);    /* green growth accent */
+}
+
+/* Theme: LIGHT */
+[data-theme="light"] {
+  --bg:        oklch(0.992 0.004 250);   /* paper canvas */
+  --surface:   oklch(0.965 0.006 250);
+  --ink:       oklch(0.25 0.022 255);
+  --accent:    oklch(0.46 0.11 230);
   ...
 }
 ```
+
+Theme switching is persistent via a top-right theme toggle button (`localStorage`). Accessible contrast (WCAG AA/AAA) and responsive mobile touch targets (44px minimum) are built-in.
 
 ---
 
@@ -386,13 +413,14 @@ read `.bib` files directly, which is why this conversion step exists.
 
 ## Before going live
 
-- [ ] Replace the placeholder group name & tagline in [`hugo.toml`](hugo.toml).
-- [ ] Set the real `baseURL` in [`hugo.toml`](hugo.toml).
+- [x] Configure group name, email, and bilingual taglines in [`hugo.toml`](hugo.toml).
+- [x] Configure institutional contact & DEMAC/IGCE Rio Claro address in [`data/contact.yaml`](data/contact.yaml).
+- [x] Establish design system and theme tokens in [`static/css/style.css`](static/css/style.css) (The Signal Field).
+- [ ] Set the real production `baseURL` in [`hugo.toml`](hugo.toml) when publishing (e.g., GitHub Pages or institutional domain).
 - [ ] Add real member photos to `static/img/people/`.
 - [ ] Add funding agency logos to `static/img/funding/`.
-- [ ] Replace the example people, projects, and publications with real ones.
-- [ ] Confirm the UNESP brand colors in `static/css/style.css`.
-- [ ] Add a real group photo / logo to the home page if desired.
+- [ ] Populate remaining real people, projects, and publications in `data/`.
+- [ ] Add a lab photo or logo to `static/img/` if desired.
 
 ---
 

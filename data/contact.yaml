@@ -1,12 +1,12 @@
 # Contact & location — edit freely. Bilingual fields use { en, pt }.
 email: "rise.lamd@unesp.br"
-phone: "+55 (xx) xxxx-xxxx"
+phone: "+55 (19) 3526-9091"
 address:
-  en: "Lab room 000, Building Name\nDepartment Name, UNESP\nCity – State, Brazil, 00000-000"
-  pt: "Sala 000, Prédio\nDepartamento, UNESP\nCidade – Estado, Brasil, 00000-000"
+  en: "DEMAC — Department of Statistics, Applied Mathematics and Computing\nIGCE — Institute of Geosciences and Exact Sciences, UNESP\nAv. 24-A, 1515 — Bela Vista\nRio Claro – SP, Brazil, 13506-900"
+  pt: "DEMAC — Departamento de Estatística, Matemática Aplicada e Computação\nIGCE — Instituto de Geociências e Ciências Exatas, UNESP\nAv. 24-A, 1515 — Bela Vista\nRio Claro – SP, Brasil, 13506-900"
 # A Google Maps "place" link (optional). Leave empty "" to hide the map link.
-maps_url: "https://maps.google.com/?q=UNESP"
+maps_url: "https://maps.google.com/?q=DEMAC+IGCE+UNESP+Rio+Claro"
 social:
-  github: "https://github.com/your-org"
+  github: "https://github.com/RISE-LAMD"
   # twitter: "https://x.com/yourgroup"
   # linkedin: "https://linkedin.com/company/yourgroup"

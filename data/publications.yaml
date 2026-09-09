@@ -6,6 +6,43 @@
 #  Text in summary, highlights, visual.alt, and visual.caption is bilingual.
 # ============================================================
 
+- title: "A Manifold-Aware Topic Modeling Approach via Rank-Based Prototypes"
+  authors: "Thiago César Castilho Almeida; Daniel Carlos Guimarães Pedronette"
+  venue: "Empirical Methods in Natural Language Processing (EMNLP)"
+  year: 2026
+  type: conference
+  featured: true
+  showcase: true
+  summary:
+    en: "MARETopic is a training-free topic model that casts topic discovery as rank-based prototype selection, electing real corpus documents as interpretable topic leaders via manifold learning and rank correlation."
+    pt: "O MARETopic é um modelo de tópicos livre de treinamento que formula a descoberta de tópicos como uma seleção de protótipos baseada em rankings, elegendo documentos reais do corpus como líderes interpretáveis por meio de aprendizado em variedades e correlação de rankings."
+  highlights:
+    en:
+      - "Training-free and interpretable by construction: each topic is anchored on a real leader document from the corpus."
+      - "Selects exactly K topics on low-dimensional manifolds using rank-based neighborhood agreement, avoiding hubness and anisotropy."
+      - "Combines c-TF-IDF with inter-topic Maximal Marginal Relevance (MMR) to penalize word overlap and extract highly diverse, distinctive keywords."
+    pt:
+      - "Livre de treinamento e interpretável por construção: cada tópico é ancorado em um documento líder real do corpus."
+      - "Seleciona exatamente K tópicos em variedades de baixa dimensionalidade usando concordância de vizinhança baseada em ranking, mitigando 'hubness' e anisotropia."
+      - "Combina c-TF-IDF com Maximal Marginal Relevance (MMR) inter-tópicos para penalizar sobreposição de vocabulário e extrair palavras-chave altamente diversas e distintas."
+  visual:
+    src: "/img/publications/maretopic/maretopic-pipeline.png"
+    alt:
+      en: "Eight-step MARETopic pipeline, from text corpus to K topics via Sentence-BERT, UMAP manifold, ranked lists, greedy leader selection, and C-TF-IDF + MMR."
+      pt: "Pipeline em oito etapas do MARETopic, do corpus textual até K tópicos via Sentence-BERT, variedade UMAP, listas ranqueadas, seleção gulosa de líderes e C-TF-IDF + MMR."
+    caption:
+      en: "MARETopic pipeline: manifold-aware and rank-based prototype selection for topic modeling."
+      pt: "Pipeline do MARETopic: seleção de protótipos baseada em rankings e variedades para modelagem de tópicos."
+  doi: ""
+  arxiv: ""
+  pdf: ""
+  code: "https://github.com/thcastilho/maretopic"
+  project: ""
+  supplementary: ""
+  poster: ""
+  dataset: ""
+  video: ""
+
 - title: "Effective Graph and Rank-based Contextual Embeddings for Textual and Multimedia Data"
   authors: "Thiago César Castilho Almeida; Gustavo Rosseto Letício; Lucas Pascotti Valem; André Freitas; Daniel Carlos Guimarães Pedronette"
   venue: "International Joint Conference on Neural Networks (IJCNN)"
@@ -32,8 +69,9 @@
       en: "GRaCE pipeline for textual and multimedia data."
       pt: "Pipeline do GRaCE para dados textuais e multimídia."
   doi: "https://doi.org/10.1109/IJCNN64981.2025.11229362"
-  pdf: ""
-  code: "https://pypi.org/project/interpretable-embeddings/"
+  arxiv: "https://arxiv.org/abs/2608.29001"
+  pdf: "https://arxiv.org/pdf/2608.29001"
+  code: "https://github.com/thcastilho/interpretable-embeddings"
   project: ""
   supplementary: ""
   poster: ""

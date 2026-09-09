@@ -71,8 +71,6 @@ other = "Research group · UNESP"
 [hero_fullname]
 other = "Recognition, Inference and Search on Language and Multimedia Data"
 
-[hero_subhead]
-other = "We build AI that understands language, vision, and multimedia."
 
 [mod_title]
 other = "Seven signals, one representation"
@@ -122,6 +120,8 @@ other = "Key contributions"
 other = "Open full-size diagram"
 [pub_link_doi]
 other = "DOI"
+[pub_link_arxiv]
+other = "arXiv"
 [pub_link_pdf]
 other = "PDF"
 [pub_link_code]
