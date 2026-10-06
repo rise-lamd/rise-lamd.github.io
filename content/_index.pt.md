@@ -2,14 +2,6 @@
 title: "Início"
 ---
 
-Somos um grupo de pesquisa da **UNESP** que trabalha com **reconhecimento,
-inferência e busca em dados de linguagem e multimídia**. Nossa atuação
-abrange processamento de linguagem natural, visão computacional e análise
-de multimídia, recuperação de informação e aprendizado de máquina —
-transformando texto, imagens, áudio e vídeo em conhecimento estruturado
-que pode ser pesquisado e analisado.
+O **Laboratório RISE-LAMD** atua em Pesquisa, Desenvolvimento e Inovação (PD&I) nas áreas de **Inteligência Artificial**, **Aprendizado de Máquina** e **Recuperação de Informação**. Nossa pesquisa tem como foco tarefas de reconhecimento, inferência e busca em dados de linguagem e multimídia.
 
-Este parágrafo curto é o texto mais "atemporal" do site — mantenha-o
-genérico para raramente precisar de atualização. Tudo o que muda com
-frequência (equipe, artigos, projetos, notícias) é carregado
-automaticamente a partir dos arquivos de dados.
+Atuamos em diversas frentes, incluindo processamento de linguagem natural, visão computacional e recuperação de informação textual e multimídia. Desenvolvemos soluções inovadoras para avançar o estado da arte em nossas áreas de atuação, transformando dados não estruturados de diferentes modalidades (texto, imagens, áudio, vídeo e sinais) em conhecimento estruturado para suporte à decisão.

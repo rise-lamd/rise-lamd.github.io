@@ -4,25 +4,73 @@ title: "About RISE-LAMD"
 
 The **RISE-LAMD Laboratory** (*Recognition, Inference, and SEArch on Language And Multimedia Data*) is an official research laboratory of **UNESP — São Paulo State University**, formally established by the **Ordinance of September 29, 2025**.
 
-The laboratory's primary seat is based at the **Department of Statistics, Applied Mathematics and Computing (DEMAC)** within the **Institute of Geosciences and Exact Sciences (IGCE)** at the **Rio Claro** campus, with close ties and joint activities at **UNESPetro** (Center for Geosciences Applied to Petroleum). The group operates in active cross-institutional collaboration with faculty and researchers from the **Institute of Biosciences, Letters and Exact Sciences (IBILCE/UNESP)** in São José do Rio Preto and the **Institute of Mathematical and Computer Sciences (ICMC/USP)** in São Carlos.
+The laboratory is based at the **Department of Statistics, Applied Mathematics and Computing (DEMAC)** within the **Institute of Geosciences and Exact Sciences (IGCE)** at the **Rio Claro** campus, in close collaboration with **UNESPetro** (Center for Geosciences Applied to Petroleum). The group operates in active cross-institutional partnership with researchers from the **Institute of Biosciences, Letters and Exact Sciences (IBILCE/UNESP)** in São José do Rio Preto and the **Institute of Mathematical and Computer Sciences (ICMC/USP)** in São Carlos.
 
 ---
 
-## Scientific Mission and Focus
+## Research Lines
 
-RISE-LAMD investigates core algorithms and models that bridge heterogeneous and multimodal signals into structured knowledge representations. Our primary research directions include:
+RISE-LAMD operates at the frontiers of Computer Science, turning heterogeneous and unstructured signals into structured knowledge for decision support:
 
-* **Language Models & RAG:** Large Language Models (LLMs), multi-LLM query augmentation strategies, and *RAG-Fusion* applied to specialized and technical domains.
-* **Graph Machine Learning:** Graph Structure Learning (sparsification and densification), Graph Convolutional Networks (GCNs), and Knowledge Graphs.
-* **Ranking & Re-ranking:** Theoretical frameworks for rank correlation metrics, contextual re-ranking, late fusion, and evidence aggregation for information retrieval and image search.
-* **Interpretable & Robust Representations:** Prototype-based representations, contrastive learning, contextual loss functions, active learning, and weak supervision.
-* **Multimodal Signals:** Integrated techniques across text, images, video, audio, time series, tabular data, and collaborative data for recommender systems.
+### Computer Science Areas: Information Retrieval (IR) & Artificial Intelligence (AI)
+
+* **Ranking in Information Retrieval:**
+  * **Ranking:** Rank-based hashing;
+  * **Re-Ranking:** Contextual similarity; rank correlation measures; rank diffusion; reciprocal kNN; Cartesian product of references; search trees; graph and hypergraph models;
+  * **Rank Aggregation:** Representation aggregation; unsupervised effectiveness estimation and representation selection.
+* **Machine Learning:**
+  * Unsupervised Learning;
+  * Manifold Learning;
+  * Weakly Supervised and Semi-Supervised Learning;
+  * Self-Supervised Learning;
+  * Contrastive Learning.
+* **Graph Learning & Representations:**
+  * Graph Models: reciprocal neighborhood graphs, correlation graphs, and connected components;
+  * Graph Convolutional Networks (GCNs);
+  * Hypergraphs;
+  * Graph Structure Learning;
+  * Graph Embedding;
+  * Knowledge Graphs.
+* **Symbolic & Interpretable AI:**
+  * Ontologies;
+  * Interpretable representations and prototype modeling.
+* **Natural Language Processing & Language Models:**
+  * Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG);
+  * Multi-LLM Query Augmentation and RAG-Fusion.
+* **High Performance Computing for IR:**
+  * Efficiency, scalability, parallel programming, and heterogeneous computing.
+
+### Data Modalities
+* **Textual Data:** Scientific papers, operational technical reports, document collections;
+* **Multimedia Data:** Images, video, and audio;
+* **Tabular & Semi-Structured Data:** Relational databases and complex tables;
+* **Time Series:** Multivariate temporal signals;
+* **Geospatial & Remote Sensing Data.**
+
+### Applications and Domains
+* Content-Based Image Retrieval (CBIR);
+* Surveillance and Person Re-Identification;
+* Biodiversity, Precision Agriculture, and Remote Sensing;
+* Medical Imaging and Diagnostic Support;
+* **Oil & Gas Industry and Geosciences:**
+  * Automatic detection, classification, and retrieval of microfossils;
+  * Natural language processing for well drilling operations data and reports;
+  * NLP and computer vision applied to occupational safety, health, and environment (HSE);
+* Extreme Event and Natural Disaster Monitoring.
+
+---
+
+## Infrastructure and Physical Space
+
+The **RISE-LAMD Laboratory** maintains dedicated high-performance computing infrastructure for processing and training artificial intelligence models.
+
+The lab also offers collaborative physical workspaces for its researchers and students at both **DEMAC** and **UNESPetro**, located at **IGCE/UNESP — Rio Claro**.
 
 ---
 
 ## Leadership and Team
 
-* **Laboratory Director / Coordinator:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Full Professor (DEMAC/IGCE/UNESP) and Vice-Leader of UNESPetro.
+* **Laboratory Director / Coordinator:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Associate Professor (DEMAC/IGCE/UNESP) and Vice-Leader of UNESPetro.
 * **Co-PI / Vice-Coordinator:** [Prof. Dr. Ivan Rizzo Guilherme](/people/) — Associate Professor (DEMAC/IGCE/UNESP), head of the Artificial Intelligence Laboratory.
 * **Collaborating Faculty:**
   * Prof. Dr. Lucas Pascotti Valem (ICMC/USP)
@@ -32,25 +80,27 @@ RISE-LAMD investigates core algorithms and models that bridge heterogeneous and 
   * Prof. Dr. Verônica Oliveira de Carvalho
   * Prof. Dr. Bruno Penteado
 
-The lab brings together postdocs, PhD students, master's students, and undergraduate research fellows engaged in cutting-edge initiatives.
+The lab brings together PhD students, master's students, researchers, and undergraduate fellows engaged in state-of-the-art research. See the full roster on the [People page](/people/).
 
 ---
 
 ## Core Projects and Partnerships
 
-The group leads advanced scientific and applied research initiatives supported by public funding agencies and strategic industry partnerships:
+The group leads advanced scientific and applied research initiatives supported by public funding agencies and industry partners:
 
 ### Petrobras Partnerships
-* **SIAM:** Automatic microfossil recognition software development.
-* **SMS:** AI-driven prediction of safety, environment, and health (HSE) events.
-* **RADIAR 3.0:** Natural language processing applied to daily well drilling operations and engineering reports.
-* **Cortex:** Generative AI and language models applied to well operations knowledge bases.
+* **SIAM:** Automatic microfossil recognition and retrieval software.
+* **SMS:** AI-driven event prediction in safety, environment, and health (HSE) databases.
+* **RADIAR 3.0:** Natural language processing applied to well engineering reports.
+* **Cortex:** Generative AI and language models applied to daily drilling operations knowledge bases.
 
 ### FAPESP & CNPq
-* **RATIONAL (FAPESP):** Robust and augmented retrieval for natural language inference tasks using transformer-based models *(PI: Prof. Dr. Daniel Pedronette)*.
+* **RATIONAL (FAPESP / SNSF):** Robust augmented retrieval for natural language inference (*Coordinated by Prof. Dr. Daniel Pedronette and Prof. Dr. André Freitas*).
 * **CePEX (FAPESP):** São Paulo Center for Data Integration and Extreme Event Monitoring.
-* **GCN (FAPESP):** Contextual similarity learning applied to graph convolutional networks for image classification and retrieval *(PI: Prof. Dr. Lucas Valem)*.
-* **Phenology:** Plant species mapping with AI technologies to support phenology and climate change research.
+* **GCN (FAPESP):** Contextual similarity learning applied to graph convolutional networks (*Coordinated by Prof. Dr. Lucas Valem*).
+* **Phenology:** Plant species mapping with AI technologies for phenology and climate research.
+
+Full details are available on the [Research page](/research/).
 
 ---
 
@@ -58,6 +108,7 @@ The group leads advanced scientific and applied research initiatives supported b
 
 * **Primary Headquarters:**
   **DEMAC — Department of Statistics, Applied Mathematics and Computing**  
+  **UNESPetro — Center for Geosciences Applied to Petroleum**  
   **IGCE — Institute of Geosciences and Exact Sciences**  
   UNESP — São Paulo State University, Rio Claro Campus  
   Avenida 24 A, 1515 — Bela Vista  

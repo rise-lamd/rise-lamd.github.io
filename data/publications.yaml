@@ -6,6 +6,8 @@
 #  Text in summary, highlights, visual.alt, and visual.caption is bilingual.
 # ============================================================
 
+# ── 2026 ────────────────────────────────────────────────────
+
 - title: "A Manifold-Aware Topic Modeling Approach via Rank-Based Prototypes"
   authors: "Thiago César Castilho Almeida; Daniel Carlos Guimarães Pedronette"
   venue: "Empirical Methods in Natural Language Processing (EMNLP)"
@@ -34,14 +36,53 @@
       en: "MARETopic pipeline: manifold-aware and rank-based prototype selection for topic modeling."
       pt: "Pipeline do MARETopic: seleção de protótipos baseada em rankings e variedades para modelagem de tópicos."
   doi: ""
-  arxiv: ""
-  pdf: ""
+  arxiv: "https://arxiv.org/abs/2609.29630"
+  pdf: "https://arxiv.org/pdf/2609.29630"
   code: "https://github.com/thcastilho/maretopic"
-  project: ""
-  supplementary: ""
-  poster: ""
-  dataset: ""
-  video: ""
+
+- title: "Aggregating Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval"
+  authors: "Vinicius Atsushi Sato Kawai; Gustavo Rosseto Leticio; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "Journal of the Brazilian Computer Society (JBCS)"
+  year: 2026
+  type: journal
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.5753/jbcs.2026.5685"
+  pdf: "https://journals-sol.sbc.org.br/index.php/jbcs/article/view/5685"
+
+- title: "Context-Aware Text Re-Ranking through Unsupervised Manifold Learning"
+  authors: "Luis Felipe Antunes Venezian; Daniel Carlos Guimarães Pedronette"
+  venue: "Simpósio Brasileiro de Banco de Dados (SBBD)"
+  year: 2026
+  type: conference
+  featured: false
+  showcase: false
+  doi: ""
+  pdf: ""
+
+- title: "Geometria dos Embeddings em Recomendação: GNNs e Transformers sob Manifold Learning"
+  authors: "Arthur Andreazza Marinho; Daniel Carlos Guimarães Pedronette"
+  venue: "Brazilian Symposium on Multimedia and the Web (BraSNAM)"
+  year: 2026
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.5753/brasnam.2026.22535"
+  pdf: "https://sol.sbc.org.br/index.php/brasnam/article/view/43254"
+  code: "https://github.com/Concius/brasnam2026-manifold-recsys"
+
+- title: "A Ranked-Based Framework Based on Manifold Learning for Multivariate Time Series Retrieval and Classification"
+  authors: "Bionda Rozin; Daniel Carlos Guimarães Pedronette"
+  venue: "Pattern Recognition Letters"
+  year: 2026
+  type: journal
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1016/j.patrec.2026.01.026"
+  pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4956955"
+
+
+# ── 2025 ────────────────────────────────────────────────────
 
 - title: "Effective Graph and Rank-based Contextual Embeddings for Textual and Multimedia Data"
   authors: "Thiago César Castilho Almeida; Gustavo Rosseto Letício; Lucas Pascotti Valem; André Freitas; Daniel Carlos Guimarães Pedronette"
@@ -72,24 +113,172 @@
   arxiv: "https://arxiv.org/abs/2608.29001"
   pdf: "https://arxiv.org/pdf/2608.29001"
   code: "https://github.com/thcastilho/interpretable-embeddings"
-  project: ""
-  supplementary: ""
-  poster: ""
-  dataset: ""
-  video: ""
 
-- title: "Unsupervised Effectiveness Estimation Measure Based on Rank Correlation for Image Retrieval"
-  authors: "Thiago César Castilho Almeida; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
-  venue: "Advances in Visual Computing"
+- title: "Analysis of Automated Document Relevance Annotation for Information Retrieval in Oil and Gas Industry"
+  authors: "João Vitor Mariano Correia; Murilo Missano Bell; João Vitor Robiatti Amorim; Jonas Queiroz; Daniel Carlos Guimarães Pedronette; Ivan Rizzo Guilherme; Felipe Lima de Oliveira"
+  venue: "Empirical Methods in Natural Language Processing (EMNLP Industry Track)"
   year: 2025
   type: conference
   featured: false
   showcase: false
-  doi: ""
+  doi: "https://doi.org/10.18653/v1/2025.emnlp-industry.132"
+  pdf: "https://aclanthology.org/2025.emnlp-industry.132.pdf"
+
+- title: "Semi-Supervised Image Retrieval Through Particle Competition and Cooperation Combined with Manifold Learning"
+  authors: "Vinicius Atsushi Sato Kawai; Gustavo Rosseto Leticio; Daniel Carlos Guimarães Pedronette"
+  venue: "38th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)"
+  year: 2025
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/SIBGRAPI67909.2025.11223376"
   pdf: ""
-  code: ""
-  project: ""
-  supplementary: ""
-  poster: ""
-  dataset: ""
-  video: ""
+
+- title: "Graph Convolutional Networks Based on Aggregated Multilevel kNN Graph for Image Classification"
+  authors: "Gustavo Rosseto Leticio; Vinicius Atsushi Sato Kawai; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "38th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)"
+  year: 2025
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/SIBGRAPI67909.2025.11223400"
+  pdf: ""
+
+- title: "Rank-based Unsupervised Similarity Learning: Framework and Applications"
+  authors: "Italo De Matos Saldanha; Vinicius Atsushi Sato Kawai; Bionda Rozin; Gustavo Rosseto Leticio; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "38th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI Tutorial Track)"
+  year: 2025
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/SIBGRAPI67909.2025.11223278"
+  pdf: ""
+
+- title: "Re-Ranking and Representations for Time Series Retrieval: A Comparative Study"
+  authors: "Bionda Rozin; Daniel Carlos Guimarães Pedronette; Ricardo da Silva Torres"
+  venue: "IEEE Access"
+  year: 2025
+  type: journal
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/ACCESS.2025.3623930"
+  pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11208628"
+
+- title: "Inductive Self-Supervised Dimensionality Reduction for Image Retrieval"
+  authors: "Deryk Biotto; Guilherme Jardim; Vinicius Atsushi Sato Kawai; Bionda Rozin; Denis Salvadeo; Daniel Carlos Guimarães Pedronette"
+  venue: "International Conference on Computer Vision Theory and Applications (VISAPP)"
+  year: 2025
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.5220/0013158600003912"
+  pdf: "https://www.scitepress.org/Papers/2025/131586/131586.pdf"
+
+- title: "Machine Learning and Information Retrieval Techniques for Time Series Analysis"
+  authors: "Bionda Rozin; Daniel Carlos Guimarães Pedronette"
+  venue: "Workshop de Teses e Dissertações (WTD - SIBGRAPI)"
+  year: 2025
+  type: thesis
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.5753/sibgrapi.est.2025.38269"
+  pdf: "https://sol.sbc.org.br/index.php/sibgrapi_estendido/article/view/38269/38043"
+
+- title: "Unsupervised Effectiveness Estimation Measure Based on Rank Correlation for Image Retrieval"
+  authors: "Thiago César Castilho Almeida; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "International Symposium on Visual Computing (ISVC)"
+  year: 2025
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1007/978-3-031-77389-1_4"
+  pdf: ""
+
+
+# ── 2024 ────────────────────────────────────────────────────
+
+- title: "Rank-based Hashing for Effective and Efficient Nearest Neighbor Search for Image Retrieval"
+  authors: "Vinicius Sato Kawai; Lucas Pascotti Valem; Alexandro Baldassin; Edson Borin; Daniel Carlos Guimarães Pedronette; Longin Jan Latecki"
+  venue: "ACM Transactions on Multimedia Computing, Communications and Applications (TOMM)"
+  year: 2024
+  type: journal
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1145/3659580"
+  pdf: ""
+
+- title: "Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval"
+  authors: "Vinicius Atsushi Sato Kawai; Gustavo Rosseto Leticio; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "37th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)"
+  year: 2024
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/SIBGRAPI62404.2024.10716269"
+  pdf: ""
+
+- title: "Self-Supervised Image Re-Ranking Based on Hypergraphs and Graph Convolutional Networks"
+  authors: "Leonardo Tadeu Lopes; Lucas Pascotti Valem; Daniel Carlos Guimarães Pedronette"
+  venue: "37th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)"
+  year: 2024
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/SIBGRAPI62404.2024.10716321"
+  pdf: ""
+
+
+# ── 2023 ────────────────────────────────────────────────────
+
+- title: "pyUDLF: A Python Framework for Unsupervised Distance Learning Tasks"
+  authors: "Gustavo Rosseto Leticio; Lucas Pascotti Valem; Leonardo Tadeu Lopes; Daniel Carlos Guimarães Pedronette"
+  venue: "ACM International Conference on Multimedia (ACM MM)"
+  year: 2023
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1145/3581783.3613466"
+  code: "https://github.com/UDLF/pyUDLF"
+
+- title: "Self-Supervised Clustering Based on Manifold Learning and Graph Convolutional Networks"
+  authors: "Leonardo Tadeu Lopes; Daniel Carlos Guimarães Pedronette"
+  venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  year: 2023
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1109/WACV56688.2023.00559"
+  code: "https://github.com/lopes-leonardo/sgcc"
+
+- title: "Semi-Supervised Time Series Classification Through Image Representations"
+  authors: "Bionda Rozin; Emílio Bergamim; Fabricio Aparecido Breve; Daniel Carlos Guimarães Pedronette"
+  venue: "International Conference on Computational Science and Its Applications (ICCSA)"
+  year: 2023
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1007/978-3-031-36808-0_4"
+  pdf: "https://www.fabriciobreve.com/artigos/2023/iccsa2023bionda.pdf"
+
+
+# ── 2021 ────────────────────────────────────────────────────
+
+- title: "A Rank-Based Framework Through Manifold Learning for Improved Clustering Tasks"
+  authors: "Bionda Rozin; Vanessa Helena Pereira-Ferrero; Leonardo Tadeu Lopes; Daniel Carlos Guimarães Pedronette"
+  venue: "Information Sciences"
+  year: 2021
+  type: journal
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.1016/j.ins.2021.08.080"
+  pdf: ""
+
+- title: "Time Series Classification Using Shape Features Based on Angle Statistics"
+  authors: "Bionda Rozin; Daniel Carlos Guimarães Pedronette"
+  venue: "Encontro Nacional de Inteligência Artificial e Computacional (ENIAC)"
+  year: 2021
+  type: conference
+  featured: false
+  showcase: false
+  doi: "https://doi.org/10.5753/eniac.2021.18276"
+  pdf: "https://sol.sbc.org.br/index.php/eniac/article/view/18276/18110"

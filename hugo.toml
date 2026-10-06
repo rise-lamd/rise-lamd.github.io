@@ -4,9 +4,9 @@
 #  in the data/ folder and content/ files. See CONTRIBUTING.md.
 # ============================================================
 
-baseURL = "https://YOUR-GROUP.github.io/"   # <-- change after you pick a hosting URL
+baseURL = "https://siam-unesp.github.io/RISE-LAMD/"
 title = "RISE-LAMD"                           # group short name, shown in browser tab
-defaultContentLanguage = "en"
+defaultContentLanguage = "pt"
 defaultContentLanguageInSubdir = false
 
 # Pretty URLs and good defaults
@@ -24,20 +24,20 @@ enableGitInfo = true   # lets templates show "last updated" from git history
 #  Languages — Portuguese + English
 # ------------------------------------------------------------
 [languages]
-  [languages.en]
-    label = "English"
-    locale = "en-US"
-    weight = 1
-    [languages.en.params]
-      flag = "us"
-      tagline = "Recognition, inference, and search over language and multimedia data — natural language processing, computer vision, and information retrieval."
   [languages.pt]
     label = "Português"
     locale = "pt-BR"
-    weight = 2
+    weight = 1
     [languages.pt.params]
       flag = "br"
       tagline = "Reconhecimento, inferência e busca em dados de linguagem e multimídia — processamento de linguagem natural, visão computacional e recuperação de informação."
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    weight = 2
+    [languages.en.params]
+      flag = "us"
+      tagline = "Recognition, inference, and search over language and multimedia data — natural language processing, computer vision, and information retrieval."
 
 # ------------------------------------------------------------
 #  Navigation menu — shared structure, labels are translated

@@ -23,7 +23,7 @@
     pt: "Recuperação de informação, recuperação de imagens por conteúdo, re-ranking e agregação de rankings, aprendizado não supervisionado e semi-supervisionado, computação paralela."
   email: "daniel.pedronette@unesp.br"
   links:
-    lattes: ""
+    lattes: "http://lattes.cnpq.br/3363615000303340"
     scholar: "https://scholar.google.com/citations?user=j7APHdAAAAAJ"
     orcid: "https://orcid.org/0000-0002-2867-4838"
 
@@ -40,112 +40,12 @@
     pt: "Inteligência artificial."
   email: "ivan.guilherme@unesp.br"
   links:
-    lattes: ""
+    lattes: "http://lattes.cnpq.br/4422695509930776"
     scholar: "https://scholar.google.com/citations?user=PNEcJ5YAAAAJ"
     orcid: ""
 
 
 # ── Researchers / Students ──────────────────────────────────
-
-
-- name: "Vinicius Kawai"
-  pi: false
-  alumni: false
-  weight: 23
-  photo: "/img/people/kawai_vinicius.png"
-  role:
-    en: "PhD Student"
-    pt: "Doutorando"
-  interests:
-    en: "Information retrieval, image retrieval, manifold learning, graph-based methods, semi-supervised learning."
-    pt: "Recuperação de informação, recuperação de imagens, aprendizado de variedades (manifold), métodos baseados em grafos, aprendizado semi-supervisionado."
-  email: "vinicius.kawai@unesp.br"
-  links:
-    lattes: ""
-
-
-- name: "Thiago Almeida"
-  pi: false
-  alumni: false
-  weight: 33
-  photo: "/img/people/almeida_thiago.png"
-  role:
-    en: "MSc Student"
-    pt: "Mestrando"
-  interests:
-    en: "Information retrieval, image retrieval, rank correlation measures, effectiveness estimation, manifold learning."
-    pt: "Recuperação de informação, recuperação de imagens, medidas de correlação de rankings, estimativa de eficácia, aprendizado de variedades (manifold)."
-  email: "tc.almeida@unesp.br"
-  links:
-    lattes: ""
-    scholar: "https://scholar.google.com/citations?user=-J8OeukAAAAJ"
-    orcid: "https://orcid.org/0000-0002-2167-0463"
-
-
-- name: "Lucas Arruda"
-  pi: false
-  alumni: false
-  weight: 41
-  photo: "/img/people/arruda_lucas.png"
-  role:
-    en: "Undergraduate Student"
-    pt: "Graduando"
-  interests:
-    en: "Computer science student working on software for automatic identification of microfossils, with interests in computer vision and data science."
-    pt: "Estudante de Ciência da Computação atuando no desenvolvimento de software para identificação automática de microfósseis, com interesses em visão computacional e ciência de dados."
-  email: ""
-  links:
-    lattes: ""
-
-
-- name: "Guilherme Jardim"
-  pi: false
-  alumni: false
-  weight: 31
-  photo: "/img/people/jardim_guilherme.png"
-  role:
-    en: "MSc Student"
-    pt: "Mestrando"
-  interests:
-    en: "Machine learning and information retrieval."
-    pt: "Aprendizado de máquina e recuperação de informação."
-  email: "guilherme.jardim@unesp.br"
-  links:
-    lattes: ""
-    scholar: "https://scholar.google.com/citations?user=8IvcjaoAAAAJ"
-    orcid: "https://orcid.org/0000-0001-6218-8801"
-
-
-- name: "Mariana Kenworthy"
-  pi: false
-  alumni: false
-  weight: 32
-  photo: "/img/people/kenworthy_mariana.png"
-  role:
-    en: "MSc Student"
-    pt: "Mestranda"
-  interests:
-    en: ""
-    pt: ""
-  email: ""
-  links:
-    lattes: ""
-
-
-- name: "Gustavo Leticio"
-  pi: false
-  alumni: false
-  weight: 22
-  photo: "/img/people/leticio_gustavo.png"
-  role:
-    en: "PhD Student"
-    pt: "Doutorando"
-  interests:
-    en: "Information retrieval, image retrieval, distance and representation learning, manifold learning, graph-based and deep learning methods."
-    pt: "Recuperação de informação, recuperação de imagens, aprendizado de distância e de representações, aprendizado de variedades (manifold), métodos baseados em grafos e aprendizado profundo."
-  email: "gustavo.leticio@unesp.br"
-  links:
-    lattes: ""
 
 
 - name: "Filipe Marcel"
@@ -164,10 +64,249 @@
     lattes: ""
 
 
-- name: "Thiago Nelsi"
+- name: "Bionda Rozin"
+  pi: false
+  alumni: false
+  weight: 20
+  photo: "/img/people/rozin_bionda.png"
+  role:
+    en: "PhD Student"
+    pt: "Doutoranda"
+  interests:
+    en: "Machine learning, artificial intelligence, information retrieval, time series analysis, classification, clustering, computer vision and multimodal models, with applications in sports analytics, micropaleontology, and phenology."
+    pt: "Aprendizado de máquina, inteligência artificial, recuperação de informação, análise de séries temporais, classificação, agrupamento, visão computacional e modelos multimodais, com aplicações em análise esportiva, micropaleontologia e fenologia."
+  email: "bionda.rozin@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/9359733144863106"
+    scholar: "https://scholar.google.com/citations?user=QCiKch4AAAAJ&hl=pt-BR"
+    orcid: "https://orcid.org/0000-0002-5993-6570"
+
+
+- name: "Gustavo Leticio"
+  pi: false
+  alumni: false
+  weight: 21
+  photo: "/img/people/leticio_gustavo.png"
+  role:
+    en: "PhD Student"
+    pt: "Doutorando"
+  interests:
+    en: "Information retrieval, image retrieval, distance and representation learning, manifold learning, graph-based and deep learning methods."
+    pt: "Recuperação de informação, recuperação de imagens, aprendizado de distância e de representações, aprendizado de variedades (manifold), métodos baseados em grafos e aprendizado profundo."
+  email: "gustavo.leticio@unesp.br"
+  links:
+    lattes: ""
+
+
+- name: "Leonardo Tadeu Lopes"
+  pi: false
+  alumni: false
+  weight: 22
+  photo: "/img/people/lopes_leonardo.png"
+  role:
+    en: "PhD Student"
+    pt: "Doutorando"
+  interests:
+    en: "Information retrieval, Retrieval-Augmented Generation (RAG), Graph Convolutional Networks (GCNs), and Large Language Models (LLMs)."
+    pt: "Recuperação de informação, Geração Aumentada por Recuperação (RAG), redes convolucionais em grafos (GCNs) e grandes modelos de linguagem (LLMs)."
+  email: "leonardo.lopes@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/4443365678365578"
+    scholar: "https://scholar.google.com/citations?user=KsprRfIAAAAJ&hl=pt-BR"
+    orcid: "https://orcid.org/0000-0002-8717-6097"
+
+
+- name: "Vinicius Kawai"
+  pi: false
+  alumni: false
+  weight: 23
+  photo: "/img/people/kawai_vinicius.png"
+  role:
+    en: "PhD Student"
+    pt: "Doutorando"
+  interests:
+    en: "Similarity search, machine learning, information retrieval, image retrieval, manifold learning, graph-based methods, semi-supervised learning."
+    pt: "Busca por similaridade, aprendizado de máquina, recuperação de informação, recuperação de imagens, aprendizado de variedades (manifold), métodos baseados em grafos, aprendizado semi-supervisionado."
+  email: "vinicius.kawai@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/4272092979164541"
+    scholar: "https://scholar.google.com/citations?user=ymxZ_p8AAAAJ&hl=pt-BR"
+    orcid: "https://orcid.org/0000-0003-0153-7910"
+
+
+- name: "André Tomitan Bocces"
+  pi: false
+  alumni: false
+  weight: 30
+  photo: "/img/placeholder.svg"
+  role:
+    en: "MSc"
+    pt: "Mestre"
+  interests:
+    en: "High performance computing."
+    pt: "Computação de alto desempenho (HPC)."
+  email: "at.bocces@unesp.br"
+  links:
+    lattes: ""
+
+
+- name: "Luis F. A. Venezian"
+  pi: false
+  alumni: false
+  weight: 31
+  photo: "/img/people/venezian_luis.png"
+  role:
+    en: "MSc"
+    pt: "Mestre"
+  interests:
+    en: "Information retrieval and databases."
+    pt: "Recuperação de informação e bancos de dados."
+  email: "luis.venezian@unesp.br"
+  links:
+    lattes: ""
+    scholar: "https://scholar.google.com/citations?user=ax7vSlgAAAAJ&hl=en"
+
+
+- name: "Murilo Missano Bell"
+  pi: false
+  alumni: false
+  weight: 32
+  photo: "/img/people/bell_murilo.jpg"
+  role:
+    en: "MSc"
+    pt: "Mestre"
+  interests:
+    en: "Information retrieval, information representation, natural language processing, language models, artificial intelligence."
+    pt: "Recuperação de informação, representação de informação, processamento de linguagem natural, modelos de linguagem, inteligência artificial."
+  email: "murilo.bell@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/1576097622593183"
+    scholar: "https://scholar.google.com.br/citations?hl=pt-BR&user=B4-pjA4AAAAJ"
+    orcid: "https://orcid.org/0009-0006-6212-8984"
+
+
+- name: "Thiago Almeida"
+  pi: false
+  alumni: false
+  weight: 33
+  photo: "/img/people/almeida_thiago.png"
+  role:
+    en: "MSc"
+    pt: "Mestre"
+  interests:
+    en: "Information retrieval, image retrieval, rank correlation measures, effectiveness estimation, manifold learning."
+    pt: "Recuperação de informação, recuperação de imagens, medidas de correlação de rankings, estimativa de eficácia, aprendizado de variedades (manifold)."
+  email: "tc.almeida@unesp.br"
+  links:
+    lattes: ""
+    scholar: "https://scholar.google.com/citations?user=-J8OeukAAAAJ"
+    orcid: "https://orcid.org/0000-0002-2167-0463"
+
+
+- name: "Arthur Andreazza Marinho"
+  pi: false
+  alumni: false
+  weight: 40
+  photo: "/img/placeholder.svg"
+  role:
+    en: "MSc Student"
+    pt: "Mestrando"
+  interests:
+    en: "Recommender systems, Graph Neural Networks (GNNs), representation geometry, manifold learning."
+    pt: "Sistemas de recomendação, redes neurais em grafos (GNNs), geometria de representações, aprendizado em variedades (manifold learning)."
+  email: "arthur.andreazza-marinho@unesp.br"
+  links:
+    scholar: "https://scholar.google.com/citations?user=MyijyOMAAAAJ&hl=en&authuser=1&oi=sra"
+    orcid: "https://orcid.org/0009-0005-1708-2131"
+
+
+- name: "Guilherme Jardim"
+  pi: false
+  alumni: false
+  weight: 41
+  photo: "/img/people/jardim_guilherme.png"
+  role:
+    en: "MSc Student"
+    pt: "Mestrando"
+  interests:
+    en: "Machine learning and information retrieval."
+    pt: "Aprendizado de máquina e recuperação de informação."
+  email: "guilherme.jardim@unesp.br"
+  links:
+    lattes: ""
+    scholar: "https://scholar.google.com/citations?user=8IvcjaoAAAAJ"
+    orcid: "https://orcid.org/0000-0001-6218-8801"
+
+
+- name: "João Vitor Robiatti Amorim"
   pi: false
   alumni: false
   weight: 42
+  photo: "/img/people/amorim_joao.jpg"
+  role:
+    en: "MSc Student"
+    pt: "Mestrando"
+  interests:
+    en: "Information retrieval, natural language processing, synthetic data generation, dataset engineering and curation."
+    pt: "Recuperação de informação, processamento de linguagem natural, geração de dados sintéticos, engenharia e curadoria de datasets."
+  email: "joao.robiatti@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/3984432801698133"
+    orcid: "https://orcid.org/0009-0000-4280-2202"
+
+
+- name: "Mariana Kenworthy"
+  pi: false
+  alumni: false
+  weight: 43
+  photo: "/img/people/kenworthy_mariana.jpg"
+  role:
+    en: "MSc Student"
+    pt: "Mestranda"
+  interests:
+    en: "Information retrieval and machine learning."
+    pt: "Recuperação de informação e aprendizado de máquina."
+  email: "m.kenworthy@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/7946885115166795"
+
+
+- name: "Lucas Arruda"
+  pi: false
+  alumni: false
+  weight: 50
+  photo: "/img/people/arruda_lucas.png"
+  role:
+    en: "Undergraduate Student"
+    pt: "Graduando"
+  interests:
+    en: "Computer science student working on software for automatic identification of microfossils, with interests in computer vision and data science."
+    pt: "Estudante de Ciência da Computação atuando no desenvolvimento de software para identificação automática de microfósseis, com interesses em visão computacional e ciência de dados."
+  email: ""
+  links:
+    lattes: ""
+
+
+- name: "Nívea Domingues Batoni"
+  pi: false
+  alumni: false
+  weight: 51
+  photo: "/img/people/batoni_nivea.jpg"
+  role:
+    en: "Undergraduate Student"
+    pt: "Graduanda"
+  interests:
+    en: "Artificial intelligence and machine learning applied to occupational safety."
+    pt: "Inteligência artificial e aprendizado de máquina aplicados à segurança do trabalho."
+  email: "nivea.batoni@unesp.br"
+  links:
+    lattes: "http://lattes.cnpq.br/0604304029291792"
+
+
+- name: "Thiago Nelsi"
+  pi: false
+  alumni: false
+  weight: 52
   photo: "/img/people/nelsi_thiago.png"
   role:
     en: "Undergraduate Student"
@@ -180,28 +319,12 @@
     lattes: ""
 
 
-- name: "Bionda Rozin"
-  pi: false
-  alumni: false
-  weight: 21
-  photo: "/img/people/rozin_bionda.png"
-  role:
-    en: "PhD Student"
-    pt: "Doutoranda"
-  interests:
-    en: "Machine learning and information retrieval applied to images and time series, unsupervised and semi-supervised distance learning."
-    pt: "Aprendizado de máquina e recuperação de informação aplicados a imagens e séries temporais, aprendizado de distância não supervisionado e semi-supervisionado."
-  email: "bionda.rozin@unesp.br"
-  links:
-    lattes: ""
-
-
 # ── Collaborators ───────────────────────────────────────────
 
 
 - name: "Prof. Dr. Lucas Valem"
   collaborator: true
-  weight: 30
+  weight: 50
   photo: "/img/people/valem_lucas.png"
   role:
     en: "Collaborator · ICMC/USP"
@@ -218,7 +341,7 @@
 
 - name: "Prof. Dr. Arnaldo Candido Jr."
   collaborator: true
-  weight: 31
+  weight: 51
   photo: "/img/placeholder.svg"
   role:
     en: "Collaborator · IBILCE/UNESP"
@@ -233,42 +356,44 @@
 
 - name: "Prof. Dr. Frank José Affonso"
   collaborator: true
-  weight: 32
+  weight: 52
   photo: "/img/placeholder.svg"
   role:
-    en: "Project Collaborator"
-    pt: "Colaborador em Projetos"
+    en: "Collaborator · DEMAC/UNESP"
+    pt: "Colaborador · DEMAC/UNESP"
   interests:
     en: "Software engineering, self-adaptive software, reference architectures, service-oriented computing and mobile computing."
     pt: "Engenharia de software, software auto-adaptativo, arquiteturas de referência, computação orientada a serviços e computação móvel."
   links:
     lattes: ""
-  email: ""
+  email: "frank.affonso@unesp.br"
 
 
 - name: "Profa. Dra. Verônica Carvalho"
   collaborator: true
-  weight: 33
+  weight: 53
   photo: "/img/placeholder.svg"
   role:
-    en: "Project Collaborator"
-    pt: "Colaboradora em Projetos"
+    en: "Collaborator · DEMAC/UNESP"
+    pt: "Colaboradora · DEMAC/UNESP"
   interests:
-    en: ""
-    pt: ""
+    en: "Artificial intelligence, machine learning, and data mining."
+    pt: "Inteligência artificial, aprendizado de máquina e mineração de dados."
   links:
     lattes: ""
+  email: "veronica.carvalho@unesp.br"
 
 
 - name: "Prof. Dr. Bruno Penteado"
   collaborator: true
-  weight: 34
+  weight: 54
   photo: "/img/placeholder.svg"
   role:
-    en: "Project Collaborator"
-    pt: "Colaborador em Projetos"
+    en: "Collaborator · DEMAC/UNESP"
+    pt: "Colaborador · DEMAC/UNESP"
   interests:
-    en: ""
-    pt: ""
+    en: "Data mining, computational intelligence, and machine learning."
+    pt: "Mineração de dados, inteligência computacional e aprendizado de máquina."
   links:
     lattes: ""
+  email: "bruno.penteado@unesp.br"

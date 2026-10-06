@@ -8,17 +8,17 @@
       try {
         var t = localStorage.getItem('theme');
         if (t !== 'light' && t !== 'dark') {
-          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          t = 'light';
         }
         document.documentElement.dataset.theme = t;
-      } catch (e) { document.documentElement.dataset.theme = 'dark'; }
+      } catch (e) { document.documentElement.dataset.theme = 'light'; }
     })();
   </script>
   <title>
     {{ if .IsHome }}{{ .Site.Params.groupNameShort }}{{ else }}{{ .Title }} · {{ .Site.Params.groupNameShort }}{{ end }}
   </title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.groupNameFull }}{{ end }}">
-  <meta name="theme-color" content="#101a2e">
+  <meta name="theme-color" content="#fdfdfd">
   <!-- Open Graph / Social sharing -->
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">

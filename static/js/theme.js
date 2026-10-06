@@ -8,7 +8,7 @@
     btn.setAttribute('aria-pressed', String(t === 'dark'));
     btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
   }
-  sync(document.documentElement.dataset.theme === 'light' ? 'light' : 'dark');
+  sync(document.documentElement.dataset.theme || 'light');
   btn.addEventListener('click', function () {
     var next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
     document.documentElement.dataset.theme = next;

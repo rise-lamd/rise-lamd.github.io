@@ -66,16 +66,16 @@ other = "Esta página não está no campo. O link pode estar desatualizado ou a 
 other = "Voltar ao início"
 
 [hero_eyebrow]
-other = "Grupo de pesquisa · UNESP"
+other = "Laboratório RISE-LAMD · UNESP"
 
 [hero_fullname]
 other = "Reconhecimento, Inferência e Busca em Dados de Linguagem e Multimídia"
 
 
 [mod_title]
-other = "Sete sinais, uma representação"
+other = "Rising from data to knowledge"
 [mod_body]
-other = "Transformamos texto, diálogo, imagens, áudio, vídeo, tabelas e sinais em conhecimento estruturado que pode ser buscado e analisado."
+other = "Transformamos texto, diálogo, imagens, áudio, vídeo, tabelas e sinais — dados não estruturados — em conhecimento acessível para suporte à decisão."
 [mod_cta]
 other = "Conheça nossa pesquisa"
 [mod_text]

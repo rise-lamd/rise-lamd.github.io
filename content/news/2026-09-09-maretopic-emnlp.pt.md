@@ -44,4 +44,5 @@ pip install maretopic
 
 Para detalhes de uso, documentação completa e exemplos com conjuntos de referência (como o 20 Newsgroups), acesse o repositório oficial no GitHub:
 - **Repositório GitHub:** [https://github.com/thcastilho/maretopic](https://github.com/thcastilho/maretopic)
-- **Publicações do RISE-LAMD:** Consulte nossa seção de [Publicações](/pt/publications/) para mais artigos do grupo.
+- **Preprint no arXiv:** [https://arxiv.org/abs/2609.29630](https://arxiv.org/abs/2609.29630)
+- **Publicações do RISE-LAMD:** Consulte nossa seção de [Publicações](/publications/) para mais artigos do grupo.

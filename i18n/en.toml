@@ -66,16 +66,16 @@ other = "This page isn't in the field. The link may be old, or the page may have
 other = "Back to home"
 
 [hero_eyebrow]
-other = "Research group · UNESP"
+other = "RISE-LAMD Laboratory · UNESP"
 
 [hero_fullname]
 other = "Recognition, Inference and Search on Language and Multimedia Data"
 
 
 [mod_title]
-other = "Seven signals, one representation"
+other = "Rising from data to knowledge"
 [mod_body]
-other = "We turn text, dialogue, images, audio, video, tables, and signals into structured knowledge that people can search and reason over."
+other = "We turn unstructured data — text, dialogue, images, audio, video, tables, and signals — into accessible knowledge for decision support."
 [mod_cta]
 other = "Explore our research"
 [mod_text]

@@ -8,21 +8,69 @@ A sede do laboratório está vinculada ao **Departamento de Estatística, Matem�
 
 ---
 
-## Foco Científico e Missão
+## Linhas de Pesquisa
 
-O RISE-LAMD investiga métodos e modelos avançados para transformar dados heterogêneos e multimodais em representações estruturadas de conhecimento. Nossas principais direções de pesquisa abrangem:
+O RISE-LAMD atua na fronteira da Ciência da Computação, transformando dados heterogêneos e não estruturados em conhecimento estruturado para suporte à tomada de decisão:
 
-* **Modelos de Linguagem e RAG:** Pesquisas com Grandes Modelos de Linguagem (LLMs), estratégias de aumento de consultas multi-LLM (*Multi-LLM Query Augmentation*) e *RAG-Fusion* aplicados a domínios especializados.
-* **Aprendizado em Grafos:** Aprendizado de estrutura de grafos (*Graph Structure Learning* — esparsificação e densificação), Redes Convolucionais em Grafos (GCNs) e Grafos de Conhecimento.
-* **Ranqueamento e Re-ranking:** Arcabouço teórico para medidas de correlação de rankings, algoritmos de reordenação contextual, fusão de evidências e agregação aplicados à recuperação de informação e busca por imagem.
-* **Representações Interpretáveis e Aprendizado Robusto:** Modelagem de protótipos representativos, aprendizado contrastivo (*Contrastive Learning*), funções de perda contextuais, aprendizado ativo e supervisão fraca (*Weak Supervision*).
-* **Modalidades Multimídia:** Métodos integrados para texto, imagens, vídeos, áudio, séries temporais, tabelas e sistemas de recomendação baseados em dados colaborativos.
+### Áreas em Ciência da Computação: Recuperação de Informação (RI) & Inteligência Artificial (IA)
+
+* **Ranqueamento em Recuperação de Informação:**
+  * **Ranking:** Hashing baseado em ranqueamento.
+  * **Re-Ranking:** Similaridade contextual; medidas de correlação de ranqueamento; *rank diffusion*; kNN recíproco; produto cartesiano de referências; árvores de busca; modelos em grafos e hipergrafos.
+  * **Rank Aggregation:** Agregação de representações; estimativa não supervisionada de eficácia e seleção de representações.
+* **Aprendizado de Máquina:**
+  * Aprendizado Não Supervisionado (*Unsupervised Learning*);
+  * Aprendizado em Variedades (*Manifold Learning*);
+  * Aprendizado Fracamente Supervisionado e Semi-Supervisionado (*Weakly Supervised and Semi-Supervised Learning*);
+  * Aprendizado Auto-Supervisionado (*Self-Supervised Learning*);
+  * Aprendizado Contrastivo (*Contrastive Learning*).
+* **Aprendizado em Grafos e Representações:**
+  * Modelos de Grafos: grafos de vizinhança recíproca, grafos de correlação e componentes conexas;
+  * Redes Convolucionais em Grafos (*Graph Convolutional Networks* — GCNs);
+  * Hipergrafos;
+  * Aprendizado de Estrutura de Grafos (*Graph Structure Learning*);
+  * *Graph Embedding*;
+  * Grafos de Conhecimento (*Knowledge Graphs*).
+* **IA Simbólica e Interpretável:**
+  * Ontologias;
+  * Representações interpretáveis e modelagem de protótipos.
+* **Processamento de Linguagem Natural e Modelos de Linguagem:**
+  * Modelos de Linguagem (LLMs) e Geração Aumentada por Recuperação (RAG);
+  * *Multi-LLM Query Augmentation* e *RAG-Fusion*.
+* **Computação de Alto Desempenho para RI:**
+  * Eficiência, escalabilidade, programação paralela e computação heterogênea.
+
+### Modalidades de Dados
+* **Dados Textuais:** Artigos científicos, relatórios técnicos operacionais, bases documentais;
+* **Dados Multimídia:** Imagens, vídeos e áudio;
+* **Dados Tabulares e Semi-Estruturados:** Bancos de dados relacionais e tabelas complexas;
+* **Séries Temporais:** Sinais temporais multivariados;
+* **Dados Geoespaciais e Sensoriamento Remoto.**
+
+### Aplicações e Domínios
+* Recuperação de Imagens por Conteúdo (CBIR);
+* Vigilância e Re-Identificação de Pessoas;
+* Biodiversidade, Agricultura de Precisão e Sensoriamento Remoto;
+* Imagens Médicas e Suporte ao Diagnóstico;
+* **Indústria de Óleo & Gás e Geociências:**
+  * Detecção, classificação e recuperação automática de microfósseis;
+  * Processamento de linguagem natural em dados e boletins de perfuração de poços;
+  * PLN e visão computacional aplicados à segurança do trabalho (SMS);
+* Monitoramento de Eventos Extremos e Desastres Naturais.
+
+---
+
+## Infraestrutura e Espaço Físico
+
+O **Laboratório RISE-LAMD** conta com uma infraestrutura computacional própria de alto desempenho para processamento e treinamento de modelos de inteligência artificial. 
+
+O laboratório dispõe também de espaço físico de convivência e desenvolvimento que pode ser utilizado pelos membros e pesquisadores no **DEMAC** e no **UNESPetro**, ambos localizados no **IGCE/UNESP — Rio Claro**.
 
 ---
 
 ## Coordenação e Equipe
 
-* **Coordenador:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Professor Titular (DEMAC/IGCE/UNESP) e Vice-Líder do UNESPetro.
+* **Coordenador:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Professor Associado (DEMAC/IGCE/UNESP) e Vice-Líder do UNESPetro.
 * **Vice-Coordenador / Pesquisador Principal:** [Prof. Dr. Ivan Rizzo Guilherme](/people/) — Professor Associado (DEMAC/IGCE/UNESP), responsável pelo Laboratório de Inteligência Artificial.
 * **Pesquisadores Colaboradores:**
   * Prof. Dr. Lucas Pascotti Valem (ICMC/USP)
@@ -32,7 +80,7 @@ O RISE-LAMD investiga métodos e modelos avançados para transformar dados heter
   * Profa. Dra. Verônica Oliveira de Carvalho
   * Prof. Dr. Bruno Penteado
 
-O grupo conta ainda com pesquisadores de pós-doutorado, doutorandos, mestrandos e bolsistas de iniciação científica atuando em projetos de ponta.
+O grupo reúne doutorandos, mestrandos, pesquisadores e bolsistas de iniciação científica atuando em projetos de pesquisa avançada. Veja a lista completa na [página da Equipe](/people/).
 
 ---
 
@@ -41,16 +89,18 @@ O grupo conta ainda com pesquisadores de pós-doutorado, doutorandos, mestrandos
 O laboratório desenvolve projetos de pesquisa científica e tecnológica com apoio de agências de fomento e parcerias industriais estratégicas:
 
 ### Parcerias com a Petrobras
-* **SIAM:** Desenvolvimento de software para reconhecimento automático de microfósseis.
-* **SMS:** Aplicação de inteligência artificial para predição de eventos em bases de Segurança, Meio Ambiente e Saúde (SMS).
-* **RADIAR 3.0:** Processamento de linguagem natural aplicado a dados e relatórios de engenharia de poços.
-* **Cortex:** IA generativa e modelos de linguagem aplicados à base de operações diárias de poços.
+* **SIAM:** Reconhecimento Automático de Microfósseis.
+* **SMS:** Aplicação de IA para predição de eventos em bases de Segurança, Meio Ambiente e Saúde (SMS).
+* **RADIAR 3.0:** Processamento de linguagem natural aplicado a relatórios de engenharia de poços.
+* **Cortex:** IA Generativa e modelos de linguagem aplicados à base de operações diárias de poços.
 
 ### FAPESP e CNPq
-* **RATIONAL (FAPESP):** Recuperação aumentada e robusta para tarefas de inferência em linguagem natural utilizando modelos baseados em Transformers *(Coordenação: Prof. Dr. Daniel Pedronette)*.
+* **RATIONAL (FAPESP / SNSF):** Recuperação aumentada e robusta para inferência em linguagem natural (*Coordenação: Prof. Dr. Daniel Pedronette e Prof. Dr. André Freitas*).
 * **CePEX (FAPESP):** Centro Paulista de Integração de Dados para Monitoramento de Eventos eXtremos.
-* **GCN (FAPESP):** Aprendizado contextual de similaridade aplicado a redes convolucionais de grafos para classificação e recuperação de imagens *(Coordenação: Prof. Dr. Lucas Valem)*.
-* **Fenologia:** Mapeamento de espécies vegetais com tecnologia de inteligência artificial para apoio a pesquisas em fenologia e mudanças climáticas.
+* **GCN (FAPESP):** Aprendizado contextual de similaridade aplicado a redes convolucionais de grafos (*Coordenação: Prof. Dr. Lucas Valem*).
+* **Fenologia:** Mapeamento de espécies vegetais com IA para fenologia e clima.
+
+Detalhes completos de cada iniciativa estão disponíveis na [página de Pesquisa](/research/).
 
 ---
 
@@ -58,6 +108,7 @@ O laboratório desenvolve projetos de pesquisa científica e tecnológica com ap
 
 * **Sede Principal:**
   **DEMAC — Departamento de Estatística, Matemática Aplicada e Computação**  
+  **UNESPetro — Centro de Geociências Aplicadas ao Petróleo**  
   **IGCE — Instituto de Geociências e Ciências Exatas**  
   UNESP — Universidade Estadual Paulista, Câmpus de Rio Claro  
   Avenida 24 A, nº 1515 — Bairro Bela Vista  

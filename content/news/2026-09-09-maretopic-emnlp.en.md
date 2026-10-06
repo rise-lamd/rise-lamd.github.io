@@ -44,4 +44,5 @@ pip install maretopic
 
 For complete documentation, quickstart tutorials, and benchmarks on standard datasets (such as 20 Newsgroups), check out the GitHub repository:
 - **GitHub Repository:** [https://github.com/thcastilho/maretopic](https://github.com/thcastilho/maretopic)
+- **arXiv Preprint:** [https://arxiv.org/abs/2609.29630](https://arxiv.org/abs/2609.29630)
 - **RISE-LAMD Publications:** Visit our [Publications](/publications/) page to explore our latest research papers.

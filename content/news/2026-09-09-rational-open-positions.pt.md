@@ -47,4 +47,4 @@ Favor anexar:
 2. Carta de motivação resumida (até 1 página);
 3. Histórico escolar recente.
 
-Para o detalhamento completo das vagas e diretrizes, visite nossa página de [Oportunidades](/pt/opportunities/).
+Para o detalhamento completo das vagas e diretrizes, visite nossa página de [Oportunidades](/opportunities/).

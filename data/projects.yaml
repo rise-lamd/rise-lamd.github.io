@@ -1,41 +1,187 @@
 # ============================================================
 #  PROJECTS / RESEARCH LINES  —  source of truth for the Research page.
-#  To archive a finished project: change  status: active -> archived.
-#  Bilingual fields use  { en: "...", pt: "..." }.
+#  To archive a finished project: change status: active -> archived.
+#  Bilingual fields use { en: "...", pt: "..." }.
 # ============================================================
+
+# ── Active Projects ──────────────────────────────────────────
 
 - title:
     en: "RATIONAL — Robust Augmented Retrieval for Natural Language Inference"
-    pt: "RATIONAL — Recuperação Aumentada Robusta para Inferência em Linguagem Natural"
+    pt: "RATIONAL — Recuperação Aumentada e Robusta para Tarefas de Inferência em Linguagem Natural"
   status: active
   weight: 1
-  image: "/img/placeholder.svg"
+  image: "/img/funding/fapesp.svg"
   abstract:
     en: >
-      International collaborative research project between Idiap Research Institute (Switzerland) and UNESP (Brazil), funded jointly by FAPESP and SNSF. The project investigates and develops robust evidence-based methods, retrieved through Information Retrieval techniques, for natural language inference tasks supported by Large Language Models (LLMs). Funded positions for Postdoctoral and Technical Training (TT-4) are currently open.
+      International collaborative research project between Idiap Research Institute (Switzerland) and UNESP (Brazil), funded jointly by FAPESP and SNSF. Large Language Models (LLMs) have emerged as foundational models for language understanding, but require grounding in factual, verifiable evidence to mitigate hallucinations. The project investigates and develops robust evidence-based methods through Information Retrieval techniques, graph structure learning, and rank-based representations to enhance natural language inference and decision-support tasks.
     pt: >
-      Projeto de cooperação internacional entre o Idiap Research Institute (Suíça) e a UNESP (Brasil), com financiamento bilateral conjunto da FAPESP e da SNSF (Suíça). Investiga e desenvolve métodos robustos baseados em evidências, obtidas por meio de técnicas de Recuperação de Informação, para tarefas de inferência em linguagem natural apoiadas por Grandes Modelos de Linguagem (LLMs). Bolsas de Pós-Doutorado e Treinamento Técnico (TT-4) abertas.
-  funding: "FAPESP (Brazil) / SNSF (Switzerland)"
+      Projeto de cooperação internacional entre o Idiap Research Institute (Suíça) e a UNESP (Brasil), com financiamento bilateral conjunto da FAPESP e da SNSF (Suíça). Grandes Modelos de Linguagem (LLMs) surgiram como modelos fundamentais para compreensão de linguagem, mas demandam ancoragem factual para evitar alucinações. O projeto investiga e desenvolve métodos robustos baseados em evidências, obtidas por meio de técnicas de Recuperação de Informação, aprendizado em grafos e representações por ranqueamento, para tarefas de inferência em linguagem natural apoiadas por LLMs.
+  funding: "FAPESP / SNSF"
   collaborators:
-    - "Idiap Research Institute (Switzerland)"
+    - "Idiap Research Institute (Suíça)"
     - "UNESP — DEMAC / IGCE Rio Claro"
 
 - title:
-    en: "Multimedia Recognition & Retrieval"
-    pt: "Reconhecimento e Recuperação de Multimídia"
+    en: "SIAM — Automatic Microfossil Recognition and Retrieval Software"
+    pt: "SIAM — Desenvolvimento de Software de Reconhecimento Automático de Microfósseis"
   status: active
   weight: 2
-  image: "/img/placeholder.svg"
+  image: "/img/funding/petrobras.png"
   abstract:
-    en: "Short description of the second research line (e.g. image/video recognition and cross-modal search)."
-    pt: "Descrição curta da segunda linha de pesquisa (ex.: reconhecimento de imagem/vídeo e busca multimodal)."
-  funding: "CNPq"
+    en: >
+      Research and development project in partnership with Petrobras and UNESPetro focusing on digital transformation in micropaleontology. Investigates computer vision, deep learning, and content-based image retrieval (CBIR) methods for the automatic detection, segmentation, classification, and similarity search of microfossils in geological borehole samples.
+    pt: >
+      Projeto de pesquisa e desenvolvimento em parceria com a Petrobras e o UNESPetro focado na transformação digital em micropaleontologia. Investiga métodos de visão computacional, aprendizado profundo e recuperação de imagens por conteúdo (CBIR) para detecção, segmentação, classificação e busca por similaridade de microfósseis em lâminas geológicas de poços de petróleo.
+  funding: "Petrobras"
+  collaborators:
+    - "Petrobras"
+    - "UNESPetro / UNESP"
 
 - title:
-    en: "Completed Project Example"
-    pt: "Exemplo de Projeto Concluído"
+    en: "SMS — AI for Safety Event Prediction in HSE Databases"
+    pt: "SMS — Aplicação de Inteligência Artificial para Predição de Eventos de Segurança em Bases do SMS"
+  status: active
+  weight: 3
+  image: "/img/funding/petrobras.png"
+  abstract:
+    en: >
+      Development of an Artificial Intelligence solution dedicated to occupational and operational risk prevention in the oil and gas industry. The project addresses data integration challenges, utilizing multimodal machine learning, natural language processing, and predictive analytics over historical safety, environment, and health (HSE/SMS) reports.
+    pt: >
+      Desenvolvimento de uma solução baseada em Inteligência Artificial voltada à prevenção de riscos ocupacionais e operacionais na indústria de óleo e gás. O projeto atua sobre os desafios de integração de bases históricas, aplicando aprendizado multimodal, processamento de linguagem natural e análise preditiva sobre registros de Segurança, Meio Ambiente e Saúde (SMS).
+  funding: "Petrobras"
+  collaborators:
+    - "Petrobras"
+    - "UNESP Rio Claro"
+
+- title:
+    en: "RADIAR 3.0 — AI applied to Natural Language Processing in Well Engineering"
+    pt: "RADIAR 3.0 — IA Aplicada ao Processamento de Linguagem Natural em Poços"
+  status: active
+  weight: 4
+  image: "/img/funding/petrobras.png"
+  abstract:
+    en: >
+      Well drilling bulletins record all operational events during a well's lifecycle. Investigates and develops methods combining Artificial Intelligence, information retrieval, and domain-specific NLP to automatically parse, structure, and extract actionable operational knowledge from large volumes of drilling daily reports.
+    pt: >
+      Os boletins de perfuração registram todas as operações e ocorrências no ciclo de vida de um poço. O projeto investiga e desenvolve métodos combinando Inteligência Artificial, recuperação de informação e PLN especializado para capturar, estruturar, buscar e reusar o conhecimento contido em grandes volumes de relatórios textuais de engenharia de poços.
+  funding: "Petrobras"
+  collaborators:
+    - "Petrobras"
+    - "UNESP — DEMAC / IGCE"
+
+- title:
+    en: "Cortex — Generative AI applied to Daily Well Operations Knowledge Bases"
+    pt: "Cortex — IA Generativa Aplicada à Base de Operações Diárias de Poços"
+  status: active
+  weight: 5
+  image: "/img/funding/petrobras.png"
+  abstract:
+    en: >
+      Question answering and knowledge synthesis in the petroleum domain using Large Language Models (LLMs). The project focuses on fine-tuning and domain adaptation of open generative language models for Brazilian Portuguese in the oil and gas sector.
+    pt: >
+      Respostas a perguntas e síntese de conhecimento no domínio de petróleo utilizando grandes modelos de linguagem (LLMs). O projeto visa a adaptação e o ajuste fino de modelos generativos de linguagem para a língua portuguesa no domínio de óleo e gás.
+  funding: "Petrobras"
+  collaborators:
+    - "Petrobras"
+    - "IBILCE / UNESP"
+    - "DEMAC / UNESP"
+
+- title:
+    en: "GCN — Contextual Similarity Learning Applied to Graph Convolutional Networks"
+    pt: "GCN — Aprendizado Contextual de Similaridade Aplicado a Redes Convolucionais de Grafos"
+  status: active
+  weight: 6
+  image: "/img/funding/fapesp.svg"
+  abstract:
+    en: >
+      Investigates Graph Convolutional Networks (GCNs) applied to image classification and content-based retrieval, proposing contextual similarity, neighborhood graph modeling, and rank-based representations to enhance representation learning and semi-supervised performance with limited labeled data.
+    pt: >
+      Investiga Redes Convolucionais de Grafos (GCNs) aplicadas à classificação e recuperação de imagens por conteúdo, explorando informação contextual de vizinhança e estratégias baseadas em ranqueamento para aprimorar o aprendizado de representações em cenários com disponibilidade limitada de dados rotulados.
+  funding: "FAPESP"
+  collaborators:
+    - "ICMC / USP"
+    - "UNESP Rio Claro"
+
+- title:
+    en: "CePEX — São Paulo Center for Data Integration and Extreme Event Monitoring"
+    pt: "CePEX — Centro Paulista de Integração de Dados para Monitoramento de Eventos eXtremos"
+  status: active
+  weight: 7
+  image: "/img/funding/fapesp.svg"
+  abstract:
+    en: >
+      Integrated multidisciplinary center developing analytical models, artificial intelligence methods, and heterogeneous data fusion to monitor, forecast, and provide decision support for natural disasters and extreme climate events across the state of São Paulo.
+    pt: >
+      Centro multidisciplinar voltado a pesquisas integradas sobre monitoramento, previsão e suporte à decisão perante eventos extremos e desastres climáticos no estado de São Paulo, combinando modelos analíticos, inteligência artificial e fusão de dados heterogêneos.
+  funding: "FAPESP"
+  collaborators:
+    - "UNESP"
+    - "FAPESP"
+
+- title:
+    en: "Phenology — Plant Species Mapping with AI for Climate and Phenology Research"
+    pt: "Fenologia — Mapeamento de Espécies Vegetais com IA para Apoiar Pesquisas em Fenologia e Mudanças Climáticas"
+  status: active
+  weight: 8
+  image: "/img/funding/cnpq.png"
+  abstract:
+    en: >
+      Investigates machine learning and computer vision techniques for the automatic identification and monitoring of plant species from imagery captured by unmanned aerial vehicles (UAVs) and near-surface camera towers, supporting climate change and ecological phenology research.
+    pt: >
+      Investiga técnicas de aprendizado de máquina e visão computacional para identificação e monitoramento automático de espécies vegetais em imagens aéreas obtidas por VANTs e torres de monitoramento contínuo, apoiando pesquisas ecológicas de fenologia e impacto das mudanças climáticas.
+  funding: "CNPq"
+  collaborators:
+    - "UNESP Rio Claro"
+    - "CNPq"
+
+
+# ── Concluded Projects ───────────────────────────────────────
+
+- title:
+    en: "ProtoRADIAR & RADIAR 2.0 — Knowledge Capture and Dissemination in Well Engineering"
+    pt: "ProtoRADIAR & RADIAR 2.0 — Métodos de Captura e Disseminação do Conhecimento em Engenharia de Poços"
   status: archived
   weight: 50
+  image: "/img/funding/petrobras.png"
   abstract:
-    en: "Past project — shown under 'Past projects'."
-    pt: "Projeto anterior — exibido em 'Projetos concluídos'."
+    en: >
+      Precursor projects that developed natural language processing and information retrieval techniques for mining operational knowledge and drilling reports in the petroleum industry.
+    pt: >
+      Projetos predecessores que desenvolveram técnicas de processamento de linguagem natural e recuperação de informação para mineração de conhecimento operacional a partir de boletins diários de perfuração de poços de petróleo.
+  funding: "Petrobras"
+  collaborators:
+    - "Petrobras"
+    - "UNESP"
+
+- title:
+    en: "SiSuSMS — Supervisory HSE System for Offshore Drilling Rigs"
+    pt: "SiSuSMS — Sistema Supervisório de SMS para Sondas"
+  status: archived
+  weight: 51
+  image: "/img/funding/petrobras.png"
+  abstract:
+    en: >
+      Developed computational vision and monitoring methods for worker safety and automated operational tracking on offshore drilling rigs.
+    pt: >
+      Desenvolveu metodologias de visão computacional e inteligência computacional para apoio ao monitoramento de segurança do trabalho e acompanhamento de operações em plataformas marítimas de perfuração.
+  funding: "Petrobras"
+  collaborators:
+    - "Petrobras"
+    - "UNESP"
+
+- title:
+    en: "GCN (CNPq) — Graph Convolutional Networks for Unsupervised and Semi-Supervised Learning"
+    pt: "GCN (CNPq) — Redes Convolucionais Baseadas em Grafos para Aprendizado Não Supervisionado e Semi-Supervisionado"
+  status: archived
+  weight: 52
+  image: "/img/funding/cnpq.png"
+  abstract:
+    en: >
+      Investigated graph structure formulation, neighborhood representations, and convolutional operations over graphs for multimedia classification and retrieval without large quantities of manual annotations.
+    pt: >
+      Investigou a formulação de estruturas de grafos, representações de vizinhança e operações convolucionais sobre grafos para classificação e recuperação de dados multimídia sem necessidade de grandes volumes de anotações manuais.
+  funding: "CNPq"
+  collaborators:
+    - "UNESP Rio Claro"
+    - "CNPq"

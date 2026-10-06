@@ -9,6 +9,7 @@
 
   <div class="contact-card">
     {{ with $c.email }}<p>✉ <a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+    {{ with $c.email_secondary }}<p>✉ <a href="mailto:{{ . }}">{{ . }}</a> <span class="muted">({{ if eq $lang "pt" }}Coordenação{{ else }}Coordination{{ end }})</span></p>{{ end }}
     {{ with $c.phone }}<p>☎ {{ . }}</p>{{ end }}
     {{ with $c.address }}<p class="contact-address">{{ index . $lang | replaceRE "\n" "<br>" | safeHTML }}</p>{{ end }}
     {{ with $c.maps_url }}<p><a href="{{ . }}" target="_blank" rel="noopener">🗺 Google Maps</a></p>{{ end }}

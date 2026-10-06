@@ -17,4 +17,11 @@
 .tmp_impeccable/
 .venv/
 
-
+# Scratch & temporary analysis files
+scratch/
+docs/
+scripts/generate_review_doc.py
+*.docx
+*.pdf
+*.xlsx
+*.log
