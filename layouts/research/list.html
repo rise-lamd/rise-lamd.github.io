@@ -13,7 +13,7 @@
   <div class="section-head"><h2>{{ i18n "proj_active" }}</h2></div>
   {{ range $index, $project := . }}
     <div class="project" id="{{ index .title "en" | urlize }}" style="--i: {{ $index }}">
-      {{ with .image }}<img class="project-img" src="{{ . | relURL }}" alt="{{ index $project.title $lang }}" loading="lazy">{{ end }}
+      {{ with .image }}<img class="project-img" src="{{ (strings.TrimPrefix "/" .) | relURL }}" alt="{{ index $project.title $lang }}" loading="lazy">{{ end }}
       <div class="project-body">
         <h3>{{ index .title $lang }}</h3>
         <p>{{ index .abstract $lang }}</p>

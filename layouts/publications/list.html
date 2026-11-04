@@ -52,12 +52,12 @@
           {{ if $hasVisual }}
             {{ with .visual }}
             <figure class="pub-visual">
-              <a class="pub-visual-link" href="{{ .src | relURL }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_open_visual" }}: {{ $pub.title }}">
-                <img src="{{ .src | relURL }}" alt="{{ index .alt $lang }}" loading="lazy" decoding="async">
+              <a class="pub-visual-link" href="{{ (strings.TrimPrefix "/" .src) | relURL }}" target="_blank" rel="noopener" aria-label="{{ i18n "pub_open_visual" }}: {{ $pub.title }}">
+                <img src="{{ (strings.TrimPrefix "/" .src) | relURL }}" alt="{{ index .alt $lang }}" loading="lazy" decoding="async">
               </a>
               <figcaption>
                 {{ index .caption $lang }}
-                <a href="{{ .src | relURL }}" target="_blank" rel="noopener">{{ i18n "pub_open_visual" }}</a>
+                <a href="{{ (strings.TrimPrefix "/" .src) | relURL }}" target="_blank" rel="noopener">{{ i18n "pub_open_visual" }}</a>
               </figcaption>
             </figure>
             {{ end }}

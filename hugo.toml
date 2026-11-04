@@ -4,7 +4,7 @@
 #  in the data/ folder and content/ files. See CONTRIBUTING.md.
 # ============================================================
 
-baseURL = "https://siam-unesp.github.io/RISE-LAMD/"
+baseURL = "https://rise-lamd.github.io/"
 title = "RISE-LAMD"                           # group short name, shown in browser tab
 defaultContentLanguage = "pt"
 defaultContentLanguageInSubdir = false

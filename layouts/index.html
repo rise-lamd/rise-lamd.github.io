@@ -27,16 +27,16 @@
   <span class="hero-glow" aria-hidden="true"></span>
   <div class="hero-inner">
     <div class="hero-logo-wrapper" aria-hidden="true">
-      <img class="hero-logo logo-light" src="{{ "/img/logo-mark.png" | relURL }}" width="84" alt="{{ .Site.Params.groupNameShort }}">
-      <img class="hero-logo logo-dark" src="{{ "/img/logo-mark-white.png" | relURL }}" width="84" alt="{{ .Site.Params.groupNameShort }}">
+      <img class="hero-logo logo-light" src="{{ "img/logo-mark.png" | relURL }}" width="84" alt="{{ .Site.Params.groupNameShort }}">
+      <img class="hero-logo logo-dark" src="{{ "img/logo-mark-white.png" | relURL }}" width="84" alt="{{ .Site.Params.groupNameShort }}">
     </div>
     <p class="eyebrow">{{ i18n "hero_eyebrow" }}</p>
     <h1>{{ .Site.Params.groupNameShort }}</h1>
     <p class="hero-fullname">{{ i18n "hero_fullname" }}</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="{{ "/research/" | relLangURL }}">{{ i18n "nav_research" }}</a>
-      <a class="btn" href="{{ "/people/" | relLangURL }}">{{ i18n "nav_people" }}</a>
-      <a class="btn" href="{{ "/opportunities/" | relLangURL }}">{{ i18n "nav_opportunities" }}</a>
+      <a class="btn btn-primary" href="{{ "research/" | relLangURL }}">{{ i18n "nav_research" }}</a>
+      <a class="btn" href="{{ "people/" | relLangURL }}">{{ i18n "nav_people" }}</a>
+      <a class="btn" href="{{ "opportunities/" | relLangURL }}">{{ i18n "nav_opportunities" }}</a>
     </div>
   </div>
 </section>
@@ -52,7 +52,7 @@
 <section class="home-news">
   <div class="section-head">
     <h2>{{ i18n "nav_news" }}</h2>
-    <a class="more-link" href="{{ "/news" | relLangURL }}">{{ i18n "home_more_news" }} →</a>
+    <a class="more-link" href="{{ "news" | relLangURL }}">{{ i18n "home_more_news" }} →</a>
   </div>
   <ul class="news-list">
     {{ range . }}
@@ -70,7 +70,7 @@
 <section class="home-pubs">
   <div class="section-head">
     <h2>{{ i18n "home_featured_pubs" }}</h2>
-    <a class="more-link" href="{{ "/publications" | relLangURL }}">{{ i18n "pub_all" }} →</a>
+    <a class="more-link" href="{{ "publications" | relLangURL }}">{{ i18n "pub_all" }} →</a>
   </div>
   <ul class="pub-list">
     {{ range . }}

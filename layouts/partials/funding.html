@@ -4,9 +4,9 @@
   <div class="funding-logos">
     {{ range . }}
       <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}" aria-label="{{ .name }}">
-        <img class="logo-light" src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy">
+        <img class="logo-light" src="{{ (strings.TrimPrefix "/" .logo) | relURL }}" alt="{{ .name }}" loading="lazy">
         {{ if .logo_dark }}
-          <img class="logo-dark" src="{{ .logo_dark | relURL }}" alt="{{ .name }}" loading="lazy">
+          <img class="logo-dark" src="{{ (strings.TrimPrefix "/" .logo_dark) | relURL }}" alt="{{ .name }}" loading="lazy">
         {{ end }}
       </a>
     {{ end }}

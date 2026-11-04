@@ -1,8 +1,8 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.groupNameShort }}">
-      <img class="brand-logo logo-light" src="{{ "/img/logo-mark.png" | relURL }}" alt="{{ .Site.Params.groupNameShort }}" width="44">
-      <img class="brand-logo logo-dark"  src="{{ "/img/logo-mark-white.png" | relURL }}" alt="{{ .Site.Params.groupNameShort }}" width="44">
+    <a class="brand" href="{{ "" | relLangURL }}" aria-label="{{ .Site.Params.groupNameShort }}">
+      <img class="brand-logo logo-light" src="{{ "img/logo-mark.png" | relURL }}" alt="{{ .Site.Params.groupNameShort }}" width="44">
+      <img class="brand-logo logo-dark"  src="{{ "img/logo-mark-white.png" | relURL }}" alt="{{ .Site.Params.groupNameShort }}" width="44">
       <span class="brand-text">
         <span class="brand-short">{{ .Site.Params.groupNameShort }}</span>
         <span class="brand-inst">{{ .Site.Params.institution }}</span>
@@ -14,7 +14,7 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           <li>
-            <a href="{{ .URL | relLangURL }}"
+            <a href="{{ .URL }}"
                {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
               {{ i18n (printf "nav_%s" .Identifier) }}
             </a>
@@ -36,7 +36,7 @@
              past two languages without breaking the one-line header. */ -}}
       <details class="lang-switch">
         <summary class="lang-trigger" aria-label="{{ i18n "lang_select" }}">
-          <img class="lang-flag" src="{{ (printf "/img/flags/%s.svg" .Site.Language.Params.flag) | relURL }}" alt="" width="20" height="14">
+          <img class="lang-flag" src="{{ (printf "img/flags/%s.svg" .Site.Language.Params.flag) | relURL }}" alt="" width="20" height="14">
           <span class="lang-code">{{ .Site.Language.Lang | upper }}</span>
           <svg class="lang-chevron" viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M5 8l7 7 7-7"/>
@@ -48,7 +48,7 @@
             <li role="none">
               <a role="menuitem" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}"
                  {{ if eq .Language.Lang $.Site.Language.Lang }}class="is-current" aria-current="true"{{ end }}>
-                <img class="lang-flag" src="{{ (printf "/img/flags/%s.svg" .Language.Params.flag) | relURL }}" alt="" width="20" height="14">
+                <img class="lang-flag" src="{{ (printf "img/flags/%s.svg" .Language.Params.flag) | relURL }}" alt="" width="20" height="14">
                 <span class="lang-menu-code">{{ .Language.Lang | upper }}</span>
                 <span class="lang-menu-name">{{ .Language.Label }}</span>
               </a>

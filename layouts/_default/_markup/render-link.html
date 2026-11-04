@@ -1,0 +1,9 @@
+{{- /* Root-relative links ("/people/") are resolved against baseURL and the
+       current language, so they work under a subpath (e.g. /repo-name/). */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $href := .Destination -}}
+{{- if and (not $u.IsAbs) (hasPrefix .Destination "/") (not (hasPrefix .Destination "//")) -}}
+  {{- $href = strings.TrimPrefix "/" .Destination | relLangURL -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $u.IsAbs }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /**/ -}}

@@ -416,7 +416,7 @@ read `.bib` files directly, which is why this conversion step exists.
 - [x] Configure group name, email, and bilingual taglines in [`hugo.toml`](hugo.toml).
 - [x] Configure institutional contact & DEMAC/IGCE Rio Claro address in [`data/contact.yaml`](data/contact.yaml).
 - [x] Establish design system and theme tokens in [`static/css/style.css`](static/css/style.css) (The Signal Field).
-- [x] Set the real production `baseURL` in [`hugo.toml`](hugo.toml) (`https://siam-unesp.github.io/RISE-LAMD/`).
+- [x] Set the real production `baseURL` in [`hugo.toml`](hugo.toml) (`https://rise-lamd.github.io/`).
 - [x] Add real member photos to `static/img/people/`.
 - [x] Add funding agency logos to `static/img/funding/`.
 - [x] Populate real people, projects, and publications in `data/`.
