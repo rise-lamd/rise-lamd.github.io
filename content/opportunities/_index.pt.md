@@ -128,4 +128,4 @@ Além das posições com bolsa aberta acima, o RISE-LAMD recebe manifestações 
 - **Mestrado e Doutorado:** Graduados em Computação, Engenharia, Matemática Aplicada ou áreas afins. Os candidatos podem ingressar via Programas de Pós-Graduação vinculados à UNESP.
 - **Pesquisadores e Colaboradores:** Cooperação interinstitucional com laboratórios e empresas em IA generativa, busca multimodal e aprendizado em grafos.
 
-Para candidaturas gerais de fluxo contínuo, entre em contato via **[daniel.pedronette@unesp.br](mailto:daniel.pedronette@unesp.br)** ou **[rise.lamd@unesp.br](mailto:rise.lamd@unesp.br)**.
+Para candidaturas gerais de fluxo contínuo, entre em contato via **[daniel.pedronette@unesp.br](mailto:daniel.pedronette@unesp.br)**.

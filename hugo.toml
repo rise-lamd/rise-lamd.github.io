@@ -17,7 +17,7 @@ enableGitInfo = true   # lets templates show "last updated" from git history
   groupNameFull = "RISE-LAMD — Recognition, Inference and Search on Language and Multimedia Data"
   groupNameShort = "RISE-LAMD"
   institution = "UNESP — Universidade Estadual Paulista “Júlio de Mesquita Filho”"
-  email = "rise.lamd@unesp.br"
+  email = "daniel.pedronette@unesp.br"
   # Edit the rest of the contact details in data/contact.yaml
 
 # ------------------------------------------------------------

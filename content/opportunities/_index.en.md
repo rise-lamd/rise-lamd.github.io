@@ -128,4 +128,4 @@ In addition to specific funded grants, RISE-LAMD welcomes prospective students a
 - **MSc & PhD Students:** Degree in Computer Science, Engineering, Applied Math, or related disciplines. Applications follow the respective UNESP graduate programs.
 - **Postdoctoral Researchers & Collaborators:** Cross-institutional partnerships with labs and industry on generative AI, multimodal retrieval, and graph models.
 
-For general inquiries, reach out to **[daniel.pedronette@unesp.br](mailto:daniel.pedronette@unesp.br)** or **[rise.lamd@unesp.br](mailto:rise.lamd@unesp.br)**.
+For general inquiries, reach out to **[daniel.pedronette@unesp.br](mailto:daniel.pedronette@unesp.br)**.
