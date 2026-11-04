@@ -70,7 +70,7 @@ The lab also offers collaborative physical workspaces for its researchers and st
 
 ## Leadership and Team
 
-* **Laboratory Director / Coordinator:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Associate Professor (DEMAC/IGCE/UNESP) and Vice-Leader of UNESPetro.
+* **Laboratory Director / Coordinator:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Full Professor (DEMAC/IGCE/UNESP) and Vice-Leader of UNESPetro.
 * **Co-PI / Vice-Coordinator:** [Prof. Dr. Ivan Rizzo Guilherme](/people/) — Associate Professor (DEMAC/IGCE/UNESP), head of the Artificial Intelligence Laboratory.
 * **Collaborating Faculty:**
   * Prof. Dr. Lucas Pascotti Valem (ICMC/USP)

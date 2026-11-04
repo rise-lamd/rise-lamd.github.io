@@ -70,7 +70,7 @@ O laboratório dispõe também de espaço físico de convivência e desenvolvime
 
 ## Coordenação e Equipe
 
-* **Coordenador:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Professor Associado (DEMAC/IGCE/UNESP) e Vice-Líder do UNESPetro.
+* **Coordenador:** [Prof. Dr. Daniel Carlos Guimarães Pedronette](/people/) — Professor Titular (DEMAC/IGCE/UNESP) e Vice-Líder do UNESPetro.
 * **Vice-Coordenador / Pesquisador Principal:** [Prof. Dr. Ivan Rizzo Guilherme](/people/) — Professor Associado (DEMAC/IGCE/UNESP), responsável pelo Laboratório de Inteligência Artificial.
 * **Pesquisadores Colaboradores:**
   * Prof. Dr. Lucas Pascotti Valem (ICMC/USP)
