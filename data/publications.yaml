@@ -46,9 +46,57 @@
   year: 2026
   type: journal
   featured: false
-  showcase: false
+  showcase: true
+  summary:
+    en: "An unsupervised image retrieval approach that aggregates the ranked lists from a UMAP-based Neighbor Embedding Projection with those refined by rank-based manifold learning, then re-ranks the fused result to obtain the final retrieval."
+    pt: "Uma abordagem não supervisionada de recuperação de imagens que agrega as listas ranqueadas de uma Projeção de Embeddings de Vizinhança baseada em UMAP com aquelas refinadas por aprendizado de variedades baseado em rankings, reordenando o resultado combinado para obter a recuperação final."
+  highlights:
+    en:
+      - "Two complementary branches over the same CNN/Transformer features: rank-based manifold re-ranking in the original space and indexing over a low-dimensional UMAP projection."
+      - "Fuses both ranked lists with Borda count rank aggregation, followed by a final manifold learning re-ranking step."
+    pt:
+      - "Dois ramos complementares sobre as mesmas características de CNNs/Transformers: reordenação por aprendizado de variedades no espaço original e indexação sobre uma projeção UMAP de baixa dimensionalidade."
+      - "Combina as duas listas ranqueadas por agregação de rankings via Borda count, seguida de uma etapa final de reordenação por aprendizado de variedades."
+  visual:
+    src: "/img/publications/jbcs2026-nep-aggregation/nep-aggregation-pipeline.png"
+    alt:
+      en: "Methodology diagram: an image dataset goes through feature extraction into high-dimensional embeddings, which feed two branches (indexing plus manifold learning re-ranking, and UMAP projection plus indexing); their ranked lists are combined by Borda count and re-ranked by manifold learning into the final retrieval result."
+      pt: "Diagrama da metodologia: um conjunto de imagens passa por extração de características gerando embeddings de alta dimensionalidade, que alimentam dois ramos (indexação com reordenação por aprendizado de variedades, e projeção UMAP com indexação); as listas ranqueadas são combinadas por Borda count e reordenadas por aprendizado de variedades até o resultado final."
+    caption:
+      en: "Aggregating Neighbor Embedding Projection and rank-based manifold learning for image retrieval."
+      pt: "Agregação da Projeção de Embeddings de Vizinhança com aprendizado de variedades baseado em rankings para recuperação de imagens."
   doi: "https://doi.org/10.5753/jbcs.2026.5685"
   pdf: "https://journals-sol.sbc.org.br/index.php/jbcs/article/view/5685"
+
+- title: "Context-Aware Intent Retrieval and Classification Based on Graph Convolutional Networks"
+  authors: "Vinicius Atsushi Sato Kawai; Gustavo Rosseto Letício; Manuel Esteban Ramirez Carrillo; André Freitas; Daniel Carlos Guimarães Pedronette"
+  venue: "International Conference on Artificial Neural Networks (ICANN)"
+  year: 2026
+  type: conference
+  featured: true
+  showcase: true
+  summary:
+    en: "A framework for intent detection that refines the neighborhood structure of dense textual embeddings through unsupervised manifold-based strategies, then uses the refined graphs to support semi-supervised intent classification with Graph Convolutional Networks."
+    pt: "Um framework para detecção de intenções que refina a estrutura de vizinhança de embeddings textuais densos por meio de estratégias não supervisionadas baseadas em variedades, usando os grafos refinados para apoiar a classificação semi-supervisionada de intenções com Graph Convolutional Networks."
+  highlights:
+    en:
+      - "Targets noisy similarity relationships in high-dimensional embedding spaces, common for short and semantically overlapping utterances."
+      - "Refines neighborhoods via manifold learning re-ranking and Neighbor Embedding Projection before building the graph used by the GCN."
+      - "Refined neighborhood structures yield more reliable graphs and improved classification accuracy on standard intent detection benchmarks."
+    pt:
+      - "Aborda relações de similaridade ruidosas em espaços de embeddings de alta dimensionalidade, comuns em enunciados curtos e semanticamente sobrepostos."
+      - "Refina as vizinhanças por reordenação com aprendizado de variedades e Projeção de Embeddings de Vizinhança antes de construir o grafo usado pela GCN."
+      - "Estruturas de vizinhança refinadas produzem grafos mais confiáveis e maior acurácia de classificação em benchmarks padrão de detecção de intenções."
+  visual:
+    src: "/img/publications/icann2026-intent-gcn/icann2026-pipeline.png"
+    alt:
+      en: "Methodology diagram: dataset embeddings are indexed directly and re-ranked by manifold learning, or projected with UMAP-based Neighbor Embedding Projection and then indexed; the retrieval results are modeled as a graph that a Graph Convolutional Network uses to produce classification results."
+      pt: "Diagrama da metodologia: os embeddings do conjunto de dados são indexados diretamente e reordenados por aprendizado de variedades, ou projetados via Projeção de Embeddings de Vizinhança baseada em UMAP e então indexados; os resultados de recuperação são modelados como um grafo que uma Graph Convolutional Network usa para produzir a classificação."
+    caption:
+      en: "Context-aware intent retrieval and GCN-based classification pipeline."
+      pt: "Pipeline de recuperação de intenções sensível ao contexto e classificação baseada em GCN."
+  doi: "https://doi.org/10.1007/978-3-032-38410-2_57"
+  pdf: "https://link.springer.com/content/pdf/10.1007/978-3-032-38410-2_57.pdf"
 
 - title: "Context-Aware Text Re-Ranking through Unsupervised Manifold Learning"
   authors: "Luis Felipe Antunes Venezian; Daniel Carlos Guimarães Pedronette"
@@ -89,7 +137,7 @@
   venue: "International Joint Conference on Neural Networks (IJCNN)"
   year: 2025
   type: conference
-  featured: true
+  featured: false
   showcase: true
   summary:
     en: "GRaCE is a fully unsupervised framework that uses rank-based measures to select representative nodes and construct interpretable contextual embeddings for textual and multimedia data."
@@ -203,7 +251,25 @@
   year: 2024
   type: journal
   featured: false
-  showcase: false
+  showcase: true
+  summary:
+    en: "A rank-based hashing approach for nearest neighbor search that indexes images by ranking each feature dimension, retrieves candidates per feature, aggregates them, and refines the result with distance distillation re-ranking."
+    pt: "Uma abordagem de hashing baseada em rankings para busca de vizinhos mais próximos que indexa imagens ranqueando cada dimensão de característica, recupera candidatos por característica, os agrega e refina o resultado com reordenação por destilação de distâncias."
+  highlights:
+    en:
+      - "Builds one ranking per feature dimension of CNN/Transformer representations, enabling fast lookup of the query's neighbors by feature."
+      - "Aggregates the per-feature neighborhoods into a candidate set and re-ranks it with distance distillation for effective and efficient retrieval."
+    pt:
+      - "Constrói um ranking por dimensão das representações de CNNs/Transformers, permitindo a busca rápida dos vizinhos da consulta por característica."
+      - "Agrega as vizinhanças por característica em um conjunto de candidatos e as reordena por destilação de distâncias, obtendo recuperação eficaz e eficiente."
+  visual:
+    src: "/img/publications/rank-hashing/rank-hashing-pipeline.png"
+    alt:
+      en: "Five-step Rank-based Hashing pipeline: feature extraction into d-dimensional vectors, feature ranking per dimension, query neighbors by feature, rank aggregation, and distance distillation re-ranking producing the final rank."
+      pt: "Pipeline do Rank-based Hashing em cinco etapas: extração de características em vetores d-dimensionais, ranqueamento por dimensão, vizinhos da consulta por característica, agregação de rankings e reordenação por destilação de distâncias, gerando o ranking final."
+    caption:
+      en: "Rank-based Hashing pipeline for nearest neighbor search in image retrieval."
+      pt: "Pipeline do Rank-based Hashing para busca de vizinhos mais próximos em recuperação de imagens."
   doi: "https://doi.org/10.1145/3659580"
   pdf: ""
 
