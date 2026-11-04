@@ -1,5 +1,9 @@
 # RISE-LAMD — Research Group Website
 
+[![Deploy Hugo site to Pages](https://github.com/rise-lamd/rise-lamd.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/rise-lamd/rise-lamd.github.io/actions/workflows/deploy.yml)
+
+🌐 **Live site:** <https://rise-lamd.github.io/> · 📦 **Repository:** <https://github.com/rise-lamd/rise-lamd.github.io>
+
 Bilingual (English 🇬🇧 + Portuguese 🇧🇷) website for **RISE-LAMD — Recognition,
 Inference and Search on Language and Multimedia Data**, a research laboratory at
 **UNESP** (DEMAC / IGCE — Câmpus de Rio Claro, linked to UNESPetro), built with [Hugo](https://gohugo.io).
@@ -35,6 +39,8 @@ only edit simple `.yaml` and `.md` files; the site rebuilds itself.
 ## Quick start
 
 ```bash
+git clone git@github.com:rise-lamd/rise-lamd.github.io.git
+cd rise-lamd.github.io
 brew install hugo     # macOS. Windows/Linux: see "Previewing locally" below
 hugo server           # run from this folder
 ```
@@ -375,19 +381,44 @@ recommended before publishing.
 
 ## Deploying (GitHub Pages)
 
-Hosting is **free** via GitHub Pages, and the site rebuilds automatically on every
-change.
+The site is **live at <https://rise-lamd.github.io/>**, hosted for free on GitHub
+Pages from the [`rise-lamd/rise-lamd.github.io`](https://github.com/rise-lamd/rise-lamd.github.io)
+repository. Because the repo is named `<org>.github.io`, GitHub serves it at the
+domain root (no `/repo-name/` subpath).
 
-**One-time setup:**
+**How a change goes live:**
 
-1. Push this repository to GitHub.
-2. In the repo: **Settings → Pages → Build and deployment → Source: "GitHub Actions"**.
-3. Set your real URL in [`hugo.toml`](hugo.toml) (`baseURL`), e.g.
-   `https://your-org.github.io/`.
+1. Commit and push to the `main` branch (or merge a Pull Request into it).
+2. [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds the site
+   with Hugo and publishes it — usually in about a minute.
+3. Follow progress in the
+   [**Actions**](https://github.com/rise-lamd/rise-lamd.github.io/actions) tab.
+   The workflow can also be re-run manually there (**Run workflow**).
 
-After that, **every push to the `main` branch** triggers
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the
-site and publishes it in about a minute.
+**Current setup (already done — for reference):**
+
+| Setting | Value |
+|---|---|
+| GitHub organization | [`rise-lamd`](https://github.com/rise-lamd) |
+| Pages source | **Settings → Pages → Build and deployment → Source: "GitHub Actions"** |
+| `baseURL` in [`hugo.toml`](hugo.toml) | `https://rise-lamd.github.io/` |
+| Hugo version in CI | `HUGO_VERSION` in [`deploy.yml`](.github/workflows/deploy.yml) — keep it in sync with the version you use locally (`hugo version`). |
+
+> **Paths and `baseURL`.** In `data/*.yaml` and Markdown, write site paths with a
+> leading slash as usual (`/img/people/x.jpg`, `[Team](/people/)`); templates and
+> the Markdown render hooks in `layouts/_default/_markup/` resolve them against
+> `baseURL` and the current language. When editing **templates**, pass paths to
+> `relURL` / `relLangURL` **without** a leading slash (`{{ "img/logo.png" | relURL }}`)
+> — a leading slash makes Hugo ignore any subpath in `baseURL`.
+
+**Using a custom domain (optional, e.g. `rise-lamd.unesp.br`):**
+
+1. Ask UNESP's IT staff to create a DNS record
+   `rise-lamd.unesp.br  CNAME  rise-lamd.github.io.` (and, ideally, the TXT
+   verification record from **Org Settings → Pages → Verified domains**).
+2. In the repo: **Settings → Pages → Custom domain**, enter the domain and tick
+   **Enforce HTTPS**.
+3. Update `baseURL` in [`hugo.toml`](hugo.toml) to the new domain and push.
 
 **Recommended workflow for the group:** members propose changes via a Pull
 Request; a faculty member or the site maintainer reviews and merges. This gives you
@@ -421,6 +452,11 @@ read `.bib` files directly, which is why this conversion step exists.
 - [x] Add funding agency logos to `static/img/funding/`.
 - [x] Populate real people, projects, and publications in `data/`.
 - [x] Verify visual appearance, responsive layout, and bilingual symmetry.
+- [x] Move the repository to the [`rise-lamd`](https://github.com/rise-lamd) organization as `rise-lamd.github.io`.
+- [x] Deploy workflow runs on every push to `main`, with Hugo pinned to the local version.
+- [ ] Confirm **Settings → Pages → Source** is set to **"GitHub Actions"** and the first deploy succeeded.
+- [ ] Add at least one more faculty member as **Owner** of the `rise-lamd` organization.
+- [ ] *(Optional)* Request a `unesp.br` subdomain from UNESP IT — see [Deploying](#deploying-github-pages).
 
 ---
 
@@ -432,4 +468,7 @@ read `.bib` files directly, which is why this conversion step exists.
 | Page shows a broken image | The `photo`/`logo` path doesn't match a file in `static/img/...`. Check the path and filename (case-sensitive). |
 | A YAML edit broke the build | YAML is indentation-sensitive. Don't use tabs; keep the same indentation as the surrounding lines. The terminal running `hugo server` prints the line number of the error. |
 | Portuguese text not showing | Make sure you filled in the `pt:` field (data files) or created the `.pt.md` file (content pages). |
-| Changes not live on the public site | Confirm you pushed to `main`, then check the **Actions** tab on GitHub for the build status. |
+| Changes not live on the public site | Confirm you pushed to `main`, then check the [**Actions**](https://github.com/rise-lamd/rise-lamd.github.io/actions) tab for the build status. Hard-refresh the browser (`Cmd+Shift+R` / `Ctrl+Shift+R`) — GitHub Pages caches for a few minutes. |
+| Build works locally but fails in Actions | Usually a Hugo version mismatch. Compare `hugo version` with `HUGO_VERSION` in [`deploy.yml`](.github/workflows/deploy.yml) and align them. |
+| Images/links work locally but 404 when live (or vice versa) | A template is building a URL with a leading slash (`"/img/x.png" \| relURL`). Remove the leading slash — see the note in [Deploying](#deploying-github-pages). |
+| Deploy fails with a Pages/permissions error | Check **Settings → Pages → Source** is **"GitHub Actions"**, and that the `github-pages` environment allows deployments from `main`. |

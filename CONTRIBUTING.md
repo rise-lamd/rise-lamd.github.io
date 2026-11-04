@@ -94,7 +94,8 @@ Edit the text below the `---` frontmatter block.
 
 If using GitHub: commit and push (or open a Pull Request for review). The site
 rebuilds and deploys automatically via GitHub Actions — see
-`.github/workflows/deploy.yml`. Give it ~1 minute, then refresh the live site.
+`.github/workflows/deploy.yml`. Give it ~1 minute, then refresh the live site at
+<https://rise-lamd.github.io/> (build status: the repo's **Actions** tab).
 
 ---
 
